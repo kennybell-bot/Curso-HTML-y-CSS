@@ -1,0 +1,49 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    text-align: center;
+    background-color: #593C8F;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #013c2c;
+    color: white;
+}
+
+h2{
+    background: linear-gradient(to right,#593C8F, transparent);
+    padding: 5px;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    margin: 5px;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+    background-color: #171738;
+    color: #8EF9F3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #013c2c;
+}
+
+fieldset{
+    border-radius: 10px;
+    border-color: #8EF9F3;
+}
+
+legend{
+    padding: 2px;
+}
+
+input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    width: 60%;
+    padding: 3px;
+}

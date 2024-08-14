@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!--Título de la página-->
+    <title>Selectores Avanzado</title>
+</head>
+<body>
+    <!--Encaberzado de la página-->
+    <header>
+        <h1>Selectores Avanzados</h1>
+    </header>
+
+    <!--Contenido de la página-->
+    <main>
+
+        <!--Sección selectores por atributo-->
+        <section>
+            <h2>Selectores por atributo</h2>
+            <p>Este tipo de selección permite aplicar estilos a un elemento dependiendo del valor del atributo especidficado. Se puede elegir por todo el valor, por como termina el valor y por como empieza el valor.</p>
+
+            <h3>Todo el valor del atributo</h3>
+            <p>Para esto se hace uso de corchetes dentro de los cuales se va a poner el atributo y el valor especificado.</p>
+            <img src="imagenSelectoresAvanzados.jpg">
+
+            <h3>Atributos cuyos valores terminen de cierta manera</h3>
+            <p>Para esto se usan también los crochetes, pero esta vez se pone el signo $ antes del igual</p>
+            <img src="imagenSelectoresAvanzados2.jpeg">
+
+            <h3>Aatributos que empiecen de una forma determinada</h3>
+            <p>Para esto se usa el símbolo ^ antes del igual dentro de los corchetes.</p>
+            <img src="https://th.bing.com/th/id/OIP.05brFGYO7jUOIjjvTwmb-gHaEK?w=296&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+        </section>
+
+        <!--Sección selectores por herencia-->
+        <section>
+            <h2>Selectores por herencia</h2>
+            <p>Este tipo de selección permite aplicar estilos a un elemento dependiendo de dónde esté contenido o que elementos lo anteceden</p>
+
+            <h3>Selectores descendientes</h3>
+            <p>La primera forma es seleccionar un elemento contenido dentro de otro independiente de a que nivel se encuentra</p>
+            <div>
+                <span class="hola">
+                    <p>Ejemplo de un párafo dentro de un span dentro de un div</p>
+                </span>
+            </div>
+            <p>Para aplicar estilos a elementos que únicamente estan en el primer nivel de contenencia se utiliza el simbolo de mayor que ></p>
+            <div>
+                <p>Ejemplo de un párrafo que es hijo de un div</p>
+            </div>
+        </section>
+
+        <!--Sección selectores adyacentes-->
+        <section>
+            <h2>Selectores elementos contiguos</h2>
+            <h3>Selectores adyacentes</h3>
+            <p>Este tipo de selección sirve para elegir el siguiente elemento que esta en el mismo nivle de jerarquía, esto se logra poniendo un signo + entre los selectores en la hoja de estilos, si se hace con varios elementos de manera consecutiva los estilos se aplicaran al último</p>
+            <div>
+                <span>
+                    Etiquetas span
+                </span>
+                <p>Ejemplo de un párrafo que esta despues de unas etiquetas espan</p>
+            </div>
+
+            <h3>Selectores hermanos generales</h3>
+            <p>Esta sirve para seleccionar todos los elementos que esten al mismo nivel de jerarquía, estos se consigue poniendo el signo ~ entre los elementos</p>
+            <p>Este parrafo es el primero que se puso en la hoja de estilos</p>
+            <div>
+                Etiquetas span al mismo nivel del párrafo
+            </div>
+            <h4>h4 al mismo nivel del parrafo</h4>
+        </section>
+
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <a href="../../HTML/enlaces.html">Volver</a>
+    </footer>
+
+</body>
+</html>

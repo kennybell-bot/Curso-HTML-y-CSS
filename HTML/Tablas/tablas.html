@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tablas HTML</title>
+</head>
+<body>
+    <h1>Tablas HTML</h1>
+    <p>Son usadas para mostrar datos tabulares, se definen con la etiqueta table, las filas se establecen con la etiqueta tr(table row) y cada casilla de la fila se pone con la etiqueta td</p>
+    <table>
+        <tr>
+            <td class="t1da">Casilla 1 fila 1</td>
+            <td>Casilla 2 fila 1</td>
+            <td>Casilla 3 fila 1</td>
+        </tr>
+        <tr>
+            <td>Casilla 1 fila 2</td>
+            <td>Casilla 2 fila 2</td>
+            <td>Casilla 3 fila 2</td>
+        </tr>
+        <tr>
+            <td>Casilla 1 fila 3</td>
+            <td>Casilla 2 fila 3</td>
+            <td>Casilla 3 fila 3</td>
+        </tr>
+    </table>
+
+    <h2>Encabezados y anchos de casillas</h2>
+    <p>Los encabezados de la tabla se hacen con etiquetas th dentro de una fila.Con el atributo colspan se puede extender el ancho de una casilla</p>
+    <table>
+        <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado2</th>
+            <th>Encabezado 3</th>
+        </tr>
+        <tr>
+            <td>Casilla 1 fila 1</td>
+            <td>Casilla 2 fila 1</td>
+            <td>Casilla 3 fila 1</td>
+        </tr>
+        <tr>
+            <td>Casilla 1 fila 2</td>
+            <td colspan="2">Casilla 2 fila 2</td>
+        </tr>
+    </table>
+
+    <h2>Etiquetas thead y tbody</h2>
+    <p>La etiqueta thead sirve para indicar que filas son encabezado y la etiqueta tbody define cuales son las filas que forman parte del cuerpo de  la tabla. Esto a nivel semántico por lo tanto no tiene connotaciones visuales, por lo que no reemplazan las etiquetas th y td.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado2</th>
+                <th>Encabezado 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Casilla 1 fila 1</td>
+                <td>Casilla 2 fila 1</td>
+                <td>Casilla 3 fila 1</td>
+            </tr>
+            <tr>
+                <td>Casilla 1 fila 2</td>
+                <td>Casilla 2 fila 2</td>
+                <td>Casilla 3 fila 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="../enlaces.html">Volver</a>
+</body>
+</html>

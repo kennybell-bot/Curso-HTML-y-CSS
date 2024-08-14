@@ -1,0 +1,99 @@
+body{
+    background-color: #272932;
+}
+
+/*Estilos Header*/
+header{
+    background-color: #9E90A2;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h1{
+    font-family: Montserrat;
+    margin: 7px;
+}
+
+a{
+    font-family: Hind Madurai;
+    background-color: #B6C2D9;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration-line: none;
+    color: black;
+}
+
+/*Estilos main*/
+main{
+    background-color:  #9E90A2;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+section{
+    background-color: #B6C2D9;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+h2{
+    font-family: Montserrat;
+    margin-left: 10px;
+}
+
+p, ul{
+    font-family: Hind Madurai;
+    margin-left: 20px;
+}
+
+h3{
+    font-family: Montserrat;
+    margin-left: 20px;
+}
+
+/*Estilos div ejemplos*/
+/*
+div{
+    background-color: #9E90A2 !important;
+}*/
+
+div{
+    width: fit-content;
+    background-color: #828489;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+.ejemplo{
+    width: fit-content;
+    background-color: #4D7EA8;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#ejemploID{
+    width: fit-content;
+    background-color: #272932;
+    color: #B6C2D9;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+/*Estilos footer*/
+footer{
+    background-color: #9E90A2;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+}

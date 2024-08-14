@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Pseudoclases</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>Pseudoclases CSS</h1>
+        <div class="barraBusqueda">
+            <a href="#mouse">mouse</a>
+            <a href="#listas">listas</a>
+            <a href="#elementos">elementos</a>
+            <a href="#inputs">inputs</a>
+        </div>
+    </header>
+
+    <!--Contenido de la página-->
+    <main>
+        <p class="parrafoIntroduccion">Las pseudoclases son palabras clave que sirven para seleccionar un elemento en un estado específicop y aplicarle estilos. La sintaxis de las psuedoclases es el elemento seguido de dos puntos y la pseudoclase que se vay a aplicar.</p>
+
+        <!--Sección pseudoclases de mouse-->
+        <section id="mouse">
+            <h2>Pseudoclases mouse</h2>
+            <p>Son pseudoclases que sirven para que el elemento seleccionado se muestre con diferentes estilos dependiendo de las acciones del mouse</p>
+
+            <h3>hover</h3>
+            <p>Esta pseudoclase sirve para aplicar un estilo cuando el puntero del mause se encuentre sobre el elemento seleccionado</p>
+            <div class="ejemploHover">
+                div ejemplo que cambia de color cuando se le pone el mouse encima
+            </div>
+
+            <h3>active</h3>
+            <p>Pseudoclase que sirve para dar un estilo cuando se de click sobre el elemento en cuestión</p>
+            <div class="ejemploActive">
+                Ejemplo div que cambia de color cuando se le da click
+            </div>
+        </section>
+
+        <!--Sección pseudoclases de listas-->
+        <section id="listas">
+            <h2>Pseudoclases listas</h2>
+            <p>Son psuedoclases que nos permitirán aplicar estilos a los elementos de una lista en cierto momentos</p>
+
+            <h3>first-child</h3>
+            <p>Esta pseudoclase permite que se le apliquen estilos solo al primer elemento de la lista</p>
+            <ul class="listaFirstChild">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+
+            <h3>last-child</h3>
+            <p>Nos permite aplicarle estilos únicamente al último elemento de la lista</p>
+            <ul class="listaLastChild">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+
+            <h3>nth-child(#)</h3>
+            <p>Esta nos permite aplicar estilos a un elemeto culquiera de la lista, simplemente hay que poner el número del elemento entre los paréntesis</p>
+            <ul class="listaNthChild">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+            <p>Si el número que va entre paréntesis se le acompaña de una n, se establece el intervalo en el que se aplicarán los estilos, es decir de #n en #n</p>
+            <ul class="ejemploNthChild2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+                <li>Elemento 5</li>
+                <li>Elemento 6</li>
+            </ul>
+
+            <h3>nth-of-type</h3>
+            <p>La pseudoclase que nos permite omitir los elementos que no sean de tipo lista (li), de tal foroma que el número entre paréntesis si ccorrespnda a un elemento de la lista en el caso en el que contenga elementos de otro tipo</p>
+            <ul class="ejemploNthOfType">
+                <li>Elemento 1</li>
+                <p>Este elemento es un páarrafo no un elemento de la lista</p>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </section>
+
+        <!--Sección psudoclases de elementos-->
+        <section id="elementos">
+            <h2>Pseudoclases de elementos</h2>
+            <p>Estas pseudoclases son aplicables a cualquier tipo de eleemtos</p>
+
+            <h3>not(clase)</h3>
+            <p>Pseudoclase que permite aplicar estilos a todos aquellos elementos que no sean de la clase de los especificados ente parentesis.</p>
+
+            <h3>root</h3>
+            <p>Permite aplicarle estilos al elemento raíz es decir al html</p>
+        </section>
+
+        <!--Sección links-->
+        <section>
+            <h2>Psudoclases de enlaces</h2>
+            <p>Son pseudoclases que permiten aplicar estilos a los enlaces dependiendo su estado</p>
+
+            <h3>link</h3>
+            <p>Pseudoclase que asigna estilos a enlaces que no han sido visitados</p>
+
+            <h3>visited</h3>
+            <p>Es la pseudoclase que permite aplicarle estilos a los enlaces que ya fueron visitados</p>
+
+            <a href="https://www.youtube.com/watch?v=TQFnYKijBfk" class="ejemploLink" target="_blank">Link ejemplo</a>
+        </section>
+
+        <!--Sección pseudoclase de inputs-->
+        <section id="inputs">
+            <h2>Pseudoclases input</h2>
+            <p>Son pseudoclases que permiten asignarle estilos a un input dependiendo su estado</p>
+
+            <h3>checked</h3>
+            <p>Sirve para aplicarle estilos a un input de tipo checkbox cuando este este chequeado</p>
+            <input type="checkbox">
+
+            <h3>invalid</h3>
+            <p>Aolica estilos a un input cuando se le esten ingresando datos invalidos</p>
+            <input type="email" placeholder="ejemplo input que recibe email">
+
+            <h3>valid</h3>
+            <p>Aplica estilos a un input cuando es formato de los datos que se le esté ingresando es válido</p>
+            <input type="text">
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <div>
+            <a href="../Cascada y Especificidad/cascadaEspecificidad.html">
+                Página anterior
+            </a>
+            <a href="../../HTML/enlaces.html">Volver</a>
+            <a href="../Is, where y Has/isWhereHas.html">Página siguiente</a>
+        </div>
+    </footer>
+</body>
+</html>

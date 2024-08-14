@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Emmet</title>
+</head>
+<body class="pagina">
+    <header class="encabezado">
+        <h1 class="titulo">Emmet</h1>
+    </header>
+
+    <main class="contenido">
+
+        <p class="parrafo">Emmet es un plugin que sirve para mejorar y agilizar el trabajo de maquetación HTML y de estilso con CSS. Sun sintaxis se conforma de elementos que sirven como atajos para generar etiquetas y propiededes dependiendo de cada caso</p>
+
+        <section class="seccion">
+
+            <h2 class="titulo">Operadores Anidados</h2>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Hijo</h3>
+                <p class="parrafo">Este operador (&gt;), hace que se puedan poner elementos dentro de otros (anidar elementos), para construir así un árbol de jerarquías. Para hacer eso se sigue la siguiente sintaxis</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        elemlementoPadre&gt;elementoHijo
+                    </div>
+                </code>
+                <p class="parrafo parrafo--nota">Es importante no utilizar espacios</p>
+                <p class="parrafo">Lo anterior genera la siguiente estructura html:</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        &lt;;elementoPadre&gt;
+                        <blockquote>
+                            &lt;elementoHijo&gt; &lt;/elementoHijo&gt;
+                        </blockquote>
+                        &lt;/elementoPadre&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Hermanos</h3>
+                <p class="parrafo">El signo (+) permite crear dos elementos uno después del otro.</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        elemlementoPadre+elementoHijo
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        &lt;elemento&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elementoHermano&gt; &lt;/elementoHermano&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Escalar</h3>
+                <p class="parrafo">El símbolo (^) permite crear un elemento en el nivle superior del árbol desde un nivel inferior</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        elemlementoPadre&gt;elementoHijo^elementoHermano
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        &lt;elementoPadre&gt;
+                        <blockquote>
+                            &lt;elementoHijo&gt; &lt;/elementoHijo&gt;
+                        </blockquote>
+                        &lt;/elementoPadre&gt;
+                        <br>
+                        &lt;elementoHermano&gt; &lt;/elementoHermano&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Multiplicación</h3>
+                <p class="parrafo">Con el símbolo (*) podemos especificar la cantidad de veces que necesitamos que se cree un elemento.</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        elemento*3
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        &lt;elemento&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento&gt; &lt;/elemento&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Agrupación</h3>
+                <p class="parrafo">Con el uso de paréntesis se pueden agrupar elementos.</p>
+                <code class="codigo">
+                    <div class="contenedor contenendor--codigo">
+                        (elemento1 + elemento2)*2
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contendor--codigo">
+                        &lt;elemento1&gt; &lt;/elemento1&gt;
+                        <br>
+                        &lt;elemento2&gt; &lt;/elemento2&gt;
+                        <br>
+                        &lt;elemento2&gt; &lt;/elemento2&gt;
+                        <br>
+                        &lt;elemento2&gt; &lt;/elemento2&gt;
+                    </div>
+                </code>
+            </article>
+
+        </section>
+
+        <section class="seccion">
+            <h2 class="titulo">Operadores de atributos</h2>
+
+            <article class="articulo">
+                <h3 class="subtitulo">ID</h3>
+                <p class="parrafo">Con el simbolo # se puede establecer el identificador del elemento.</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        elemento#identidicador
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contendor contenedor--codigo">
+                        &lt;elemento id="identificador"&gt; &lt;/elemento&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Clase</h3>
+                <p class="parrafo">Copn el punto (.) se puede establecer la clase del elemento. Para poner varias clases se deben poner separadas por puntos</p>
+                <code class="codigo">
+                    <div class="contenendor contenedor--codigo">
+                        elemento.clase1.clase2
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contenedor-codigo">
+                        &lt;elemento class="clase1 clase2"&gt; &lt;/elemento&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Atributos Modificados</h3>
+                <p class="parrafo">Con el uso de corchetes se puede asignar un valor a un atributo esepcifico del elemento, indicandolo en su interior.</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        elemento[atributo="valor"]
+                    </div>
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        &lt;elemento atributo="valor"&gt; &lt;/elemento&gt;
+                    </div>
+                </code>
+            </article>
+
+            <article class="articulo">
+                <h3 class="subtitulo">Numeración de items</h3>
+                <p class="parrafo">Con el símbolo $ se pueden enumerrar los items que se generen. Ademas de ello se puede establecer la cantidad de cifras de la numeración conm la cantidad de sigono $ que se ponga. Finalmente se puede alterar el incremento de la numeracion con el modificador @ poniendo un valor base o haciendo que esta se decremente agregandole el signo menos al lado.</p>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        Numeración con 2 crifras: elemento.item$$*3
+                        <br>
+                        Numeración en decrecimiento: elemento.itmem$$@-*3
+                    </div>
+
+                </code>
+                <code class="codigo">
+                    <div class="contenedor contenedor--codigo">
+                        &lt;elemento class="item01"&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento class="item02"&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento class="item03"&gt; &lt;/elemento&gt;
+                        <br>
+                        <br>
+                        &lt;elemento class="item03"&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento class="item02"&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento class="item01"&gt; &lt;/elemento&gt;
+                    </div>
+                </code>
+            </article>
+
+        </section>
+
+        <section class="seccion">
+
+            <h2 class="titulo">Texto</h2>
+            <p class="parrafo">Con el uso de las llaves se puede indicar que texto va dentro del elemento.</p>
+            <code class="codigo">
+                <div class="contenedor contenedor--codigo">
+                    elemento{texto}
+                </div>
+            </code>
+            <code class="codigo">
+                <div class="contenedor contenedor--codigo">
+                    &lt;elemento"&gt; Texto &lt;/elemento&gt;
+                </div>
+            </code>
+
+        </section>
+    </main>
+
+    <footer class="pieDePagina">
+
+        <nav class="menu">
+
+            <a href="../Outline/outline.html" class="link" title="Página anterior">
+                <img src="../../Iconos/back.png" class="link__icono">
+            </a>
+
+            <a href="https://www.flaticon.com/" class="link" title="íconos" target="_blank">
+                <img src="../../Iconos/flaticon.png" class="link__icono">
+            </a>
+
+            <a href="../../HTML/enlaces.html" class="link" title="Menú principal">
+                <img src="../../Iconos/home.png" class="link__icono">
+            </a>
+
+            <a href="https://youtu.be/ELSm-G201Ls" class="link" title="fuente" target="_blank">
+                <img src="../../Iconos/youtube.png" class="link__icono">
+            </a>
+            <a href="" class="link" title="Página siguiente">
+                <img src="../../Iconos/back (1).png" class="link__icono">
+            </a>
+
+        </nav>
+
+    </footer>
+</body>
+</html>

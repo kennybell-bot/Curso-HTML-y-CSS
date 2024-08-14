@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Enlazar con los estilos de CSS</title>
+        <link rel="stylesheet" href="estilos.css">
+
+    </head>
+    <body>
+        <h1>Formas de enlazar los estilos de CSS</h1>
+
+        <h2>Estilos en linea</h2>
+        <p>Poner los estilos en la etiqueta del componente con esl atriputo style, no se recomienda esto porque confunde en la lectura del codigo</p>
+        <h3 style="color: blue;">En este header se aplicaron estilos en linea</h3>
+        <p style="color:rgb(0, 255, 81); font-size: 25 px;">En este parrafo se aplicaron los estios en linea En este parrafo se aplicaron los estios en linea En este parrafo se aplicaron los estios en linea En este parrafo se aplicaron los estios en linea</p>
+
+        <h2>Estilos con etiqueta style</h2>
+        <p>Consiste en poner los estilos en la etiqueta style usando los selectores, tampoco se es recomendable hacerlo asi</p>
+        <h3 class="header">En este header se aplicaron estilos en linea</h3>
+        <p class="parrafo">En este parrafo se aplicaron los estios en linea En este parrafo se aplicaron los estios en linea En este parrafo se aplicaron los estios en linea En este parrafo se aplicaron los estios en linea</p>
+        <style>
+            .parrafo{
+                color: blueviolet;
+            }
+            .header{
+                color: brown;
+            }
+        </style>
+
+        <h2>Estilos con etiqueta link en el head</h2>
+        <p>Es la forma como debe incluirse los estilos de CSS, se utiliza la etiqueta link con us atributos rel y href</p>
+        <h3 class="segundoHeader">Este header tiene el estilo desde la hoja de css</h3>
+        <p class="segundoParrafo">este parrafo tiene el estilo desde la hoja de css este parrafo tiene el estilo desde la hoja de css este parrafo tiene el estilo desde la hoja de css este parrafo tiene el estilo desde la hoja de css</p>
+        <p>
+            <a href="../../HTML/enlaces.html">Volver</a>
+        </p>
+
+    </body>
+</html>

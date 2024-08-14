@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Is, where y has CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Is, where y has CSS</h1>
+        <nav>
+            <a href="#is">Is</a>
+            <a href="#where">Where</a>
+            <a href="#has">Has</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <p>Son pseudoclase que sirven para aplicar elementos dependiendo de si están contenidos dentro de otros o también de quienes las sucedan</p>
+        <!--Sección is-->
+        <section id="is">
+            <h2>Is</h2>
+            <p>Sirve para seleccionar elementos que estén contenidos dentro del elemento que pongamos antes de los dos puntos, este cambia la especificidad a la hora de aplicar los estilos</p>
+            <p class="cambio">Por ejemplo este párrafo cambia de estilo por que es de clase cambio</p>
+        </section>
+
+        <!--Sección where-->
+        <section id="where">
+            <h2>Where</h2>
+            <p>Sirve para seleccionar elementos que estén contenidos dentro del elemento que pongamos antes de los dos puntos, este NO cambia la especificidad a la hora de aplicar los estilos</p>
+            <p class="cambioColor2">Por ejemplo el div cambia de color porque este párrafo es de clase cambioColor2.</p>
+        </section>
+
+        <!--Sección has-->
+        <section id="has">
+            <h2>Has</h2>
+            <p>Este sirve para aplicar estilos al elemento en el caso de que el escenario entre paréntesis se cumpla, por ejemplo que contenga elementos con cierta clase o id, o que sea sucedido por cierto otro elemento de cierta clae en específico.</p>
+            <div>
+                <p class="ejemploHas">Por ejemplo el div cambia de color porque contiene este párrafo de tipo ejemploHas</p>
+            </div>
+
+            <div></div>
+            <p class="ejemploHas">Por ejemplo el div cambia de color porque está sucedido de este párrafo de tipo ejemploHas</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="../Pseudoclases/pseudoclases.html">
+            <img src="../../Iconos/back.png">
+        </a>
+        <a href="../../HTML/enlaces.html">
+            <img src="../../Iconos/menu.png" alt="">
+        </a>
+        <a href="../Pseudoelementos/pseudoelementos.html">
+            <img src="../../Iconos/back (1).png" alt="">
+        </a>
+        <h2>íconos:</h2>
+        <a href="https://www.flaticon.com/free-icons/previous" title="previous icons">Previous icons created by Tempo_doloe - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a>
+    </footer>
+</body>
+</html>

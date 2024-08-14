@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Object fit y position</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="titulo">Object fit y position</h1>
+    </header>
+
+    <main class="cuerpo">
+        <!--Sección object fit-->
+        <section class="seccion">
+            <h2 class="titulo">Object fit</h2>
+
+            <p class="parrafo">Esta propiedad de css permite establecer como el contenido de un objeto (imagen o video) se va redimenzionar dentro de su contenedor. La forma disipocision del contenido esta dada por el valor que tenga la propiedad.</p>
+
+            <article class="articulo">
+                <h3 class="titulo">fill</h3>
+                <p class="parrafo">Este valor hace que el contenido se redimensione para llenar al contenedor sin respetar su relación de aspecto.</p>
+                <div class="codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                object-fit: fil;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <img src="paisaje.jpg" class="imagen imagen--fill">
+            </article>
+
+            <article class="articulo">
+                <h3 class="titulo">contain</h3>
+                <p class="parrafo">Con este valor el contenido se redimensionará respetando su relación de aspecto hatas que llene en alto o ancho el contenedor.</p>
+                <div class="codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                object-fit: contain;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <img src="paisaje.jpg" class="imagen imagen--contain">
+            </article>
+
+            <article class="articulo">
+                <h3 class="titulo">cover</h3>
+                <p class="parrafo">Valor que hace que el contenido crezca respetando su relación de aspecto hasta que llene el contenedor</p>
+                <div class="codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                object-fit: cover;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <img src="paisaje.jpg" class="imagen imagen--cover">
+            </article>
+
+            <article class="articulo">
+                <h3 class="titulo">none</h3>
+                <p class="parrafo">Es el valor por defecto y hace que el contenido se muestre tal y como es.</p>
+                <div class="codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                object-fit: none;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <img src="paisaje.jpg" class="imagen imagen--none">
+            </article>
+
+            <article class="articulo">
+                <h3 class="titulo">scale-down</h3>
+                <p class="parrafo">Este valor hace que el contenido se redimensione como contain o none de tal forma que tenge el menor tamaño posible.</p>
+                <div class="codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                object-fit: scale-down;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <img src="paisaje.jpg" class="imagen imagen--scaleDown">
+            </article>
+
+        </section>
+
+        <!--Sección object position-->
+        <section class="seccion">
+            <h2 class="titulo">Objecto position</h2>
+
+            <p class="parrafo">Es la propieadad que nos permite determinar la alineación del elemento dentro de la caja.</p>
+
+            <!--Artículo valor-->
+            <article class="articulo">
+                <h3 class="titulo">Valor</h3>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: center;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--center">
+                </div>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: top;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--top">
+                </div>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: bottom;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--bottom">
+                </div>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: left;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--left">
+                </div>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: right;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--right">
+                </div>
+            </article>
+
+            <!--Artículo porcentajes y pixeles-->
+            <article class="articulo">
+                <h3 class="titulo">Pixeles y porcentajes</h3>
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: 10px 20px;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--pixeles">
+                </div>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: 10% 20%;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--porcentajes">
+                </div>
+            </article>
+            
+            <!--Artículo combinación-->
+            <article class="articulo">
+                <h3 class="titulo">Combinación</h3>
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: top left;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--combiancion">
+                </div>
+
+                <div class="contenedor">
+                    <div class="codigo">
+                        <code>
+                            elemento{
+                                <blockquote>
+                                    object-position: bottom 10%;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <img src="paisaje.jpg" class="imagen imagen--combinacionPorcentaje">
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="pieDePagina">
+        <nav class="menu">
+            <a href="../Flujo de texto/flujoTexto.html" class="enlace" title="Página anterior">
+                <img src="../../Iconos/back.png" class="enlace__icono">
+            </a>
+
+            <a href="https://www.flaticon.com/" class="enlace" title="Íconos">
+                <img src="../../Iconos/flaticon.png" class="enlace__icono">
+            </a>
+
+            <a href="../../HTML/enlaces.html" class="enlace" title="Menú principal">
+                <img src="../../Iconos/home.png" class="enlace__icono">
+            </a>
+            
+            <a href="https://youtu.be/ELSm-G201Ls" class="enlace" target="_blank" title="Fuente">
+                <img src="../../Iconos/youtube.png" class="enlace__icono">
+            </a>
+
+            <a href="../Outline/outline.html" class="enlace" title="Siguiente página">
+                <img src="../../Iconos/back (1).png" class="enlace__icono">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

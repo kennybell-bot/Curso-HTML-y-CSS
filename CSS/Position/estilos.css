@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+}
+
+.encabezado{
+    background-color: #588B8B;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    height: 50px;
+    box-shadow: 2px 0px 7px #000;
+}
+
+.encabezado__titulo{
+    text-align: center;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+
+.enlace{
+    background-color: #F28F3B;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.enlace--absolute{
+    position: absolute;
+}
+
+.enlace__icono{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.enlace__icono:hover{
+    width: 70px;
+    height: 70px;
+}
+
+.enlace:hover{
+    box-shadow: 0px 0px 5px #ffff;
+}
+
+.enlace--derecha{
+    right: 4px;
+    top: 5px;
+}
+
+.enlace--izquierda{
+    left: 4px;
+    top: 5px;
+}
+
+.enlace--margin{
+    margin: 5px;
+}
+
+.pieDePagina{
+    background-color: #588B8B;
+    height: 70px;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 5px;
+}
+
+.parrafo{
+    font-family: Hind Madurai;
+}
+
+.parrafo--explicacion{
+    margin: 0px 0px 0px 15px;
+    display: inline-block;
+}
+
+.seccion__titulo{
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.articulo__titulo{
+    font-family: Montserrat;
+}
+
+.pieDePagina{
+    position: relative;
+    bottom: 0;
+}
+
+.cuerpo{
+    margin: 5px;
+}
+
+.contenedor{
+    width: 200px;
+    height: 200px;
+    border: 2px solid#000;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+}
+
+.ejemplo{
+    position: relative;
+    width: 20%;
+    height: 20%;
+    background-color: #F28F3B;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.ejemplo--top{
+    position: relative;
+    top: 10px;
+}
+
+.ejemplo--bottom{
+    position: relative;
+    bottom: 10px;
+}
+
+.ejemplo-left{
+    position: relative;
+    left: 10px;
+}
+
+.ejemplo--right{
+    position: relative;
+    right: 10px;
+}
+
+.ejemplo--absolute{
+    position: absolute;
+    right: 70px;
+    left: 70px;
+    bottom: 70px;
+    top: 70px;
+}
+
+.ejemplo--zindex{
+    position: relative;
+    background-color: #588B8B;
+    bottom: 10px;
+    z-index: 1;
+}

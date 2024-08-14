@@ -1,0 +1,79 @@
+body{
+    background-color: white;
+}
+
+header{
+    background-color: #735D78;
+    padding: 3px;
+    border-radius: 10px;
+    border: solid 3px black;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+nav{
+    background-color: #B392AC;
+    width: 90%;
+    margin: auto;
+    padding: 3px;
+    border-radius: 10px;
+    border: solid 3px black;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+h1{
+    text-align: center;
+    font-family: Montserrat;
+    color: white;
+}
+
+h2{
+    font-family: Montserrat;
+    color: white;
+}
+
+.parrafoHeader{
+    text-align: center;
+    font-family: Lora;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p, ul, a{
+    font-family: Hind Madurai;
+}
+
+main{
+    background-color: #D1B3C4;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 3px black;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+aside{
+    background-color: #E8C2CA;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: solid 3px black;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+section{
+    border: solid 3px black;
+    background-color: #F7D1CD;
+    padding: 5px;
+    margin: 7px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+footer{
+    background-color: #735D78;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 10px;
+    border: solid 3px black;
+    box-shadow: 0px 0px 10px 1px #000;
+}

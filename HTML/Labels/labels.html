@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Labels HTML</title>
+</head>
+<body>
+    <h1>Labels HTML</h1>
+    <p>Sirven para etiquetar inputs, son elementos en línea, es decir que el margin y el padding no son modificables. Se puede hacer que al hacer click en el label se resalte el input al que está asociado. Esta asociación se puede dar de dos formas:</p>
+
+    <h2>Asociación por id</h2>
+    <p>Para esto se le asigna un id para el input, posteriormente se le pone este id como valor al atributo for del label</p>
+    <div>
+        <label for="idInputUno">Haga click en este label</label>
+    </div>
+    <input id="idInputUno" type="text" placeholder="Input asociado por id">
+
+    <h2>Asociación poniendo el input dentro del label</h2>
+    <p>Para esto, se pone el input dentro de las etiqutas label, para esto no hace falta que el input tenga un id ni que el label tenga un for</p>
+    <label>
+        Haga click en este label
+        <div>
+            <input type="text" placeholder="Este input esta dentro de las etiquetas label">
+        </div>
+
+    </label>
+
+    <a href="../enlaces.html">Volver</a>
+</body>
+</html>

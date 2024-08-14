@@ -1,0 +1,83 @@
+body{
+    background-color: #64113F;
+}
+
+:is(h1, h2){
+    font-family: Montserrat;
+    margin: 0;
+}
+
+:is(p, ul, a){
+    font-family: Hind Madurai;
+    margin: 0;
+    text-decoration: none;
+}
+
+/*Estilos header*/
+header{
+    background-color: #F29CA3;
+    border: solid 2px #DE4D86;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+header a{
+    background-color: #64113F;
+    padding: 2px;
+    color: #DE4D86;
+    border-radius: 5px;
+}
+
+/*Estilos main*/
+main{
+    background-color: #F29CA3;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*Estilos secciones*/
+section{
+    background-color: #64113F;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+div{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 2px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.lista{
+    font-family: Lora;
+    font-style: italic;
+}
+
+.lista--fondo{
+    background-color: #DE4D86;
+    border-radius: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+/*Estilos footer*/
+footer{
+    background-color: #F29CA3;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 4px;
+}
+
+img{
+    background-color: #64113F;
+    border-radius: 50%;
+}

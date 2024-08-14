@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Pseudoelementos</title>
+</head>
+<body>
+    <header>
+
+        <h1>Pseudoelementos CSS</h1>
+
+        <nav>
+            <a href="#primeraLinea">First line</a>
+            <a href="#ultimaLinea">Last line</a>
+            <a href="#selection">Selection</a>
+            <a href="#placeholder">Placeholder</a>
+            <a href="#marker">Marker</a>
+            <a href="#before">Before</a>
+            <a href="#after">After</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <p>Sirven para aplicar estilos a ciertos aspectos de un elemento, para aplicarlos se coloca el nombre del elemento seguido de dos veces los dos puntos y finalmente el pseudoelemento, en la hoja de estilos.</p>
+
+        <div>
+            <code>
+                elemento :: paseudoelemento{
+                    <br>
+                    estilos
+                    <br>
+                }
+            </code>
+        </div>
+
+        <!--Sección primera letra-->
+        <section>
+            <h2>First letter</h2>
+            <p class="ejemploFirstLetter">Con este pseudoelemeto es posible aplicarle estilos a la primera letra de este párrafo.</p>
+        </section>
+
+        <!--Sección primera línea-->
+        <section id="primeraLinea">
+            <h2>First Line</h2>
+            <p>Con este pseudoelemento es posible aplicarle estilos únicamente a la primera línes de un párrafo.</p>
+            <p class="ejemploFirstLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <!--Sección selection-->
+        <section id="selection">
+            <h2>Selection</h2>
+            <p>Con este pseudoelemento se aplican los estilos que apareceran cuando se haga una selección con el mouse. Estos estilos solamente se verán cuando se seleccione el elemento con el que se usa el pseudoelemento, por ejemplo el siguiente párrafo.</p>
+            <p class="ejemploSelection">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <!--Sección placeholder-->
+        <section id="placeholder">
+            <h2>Placeholder</h2>
+            <p>Con este pseudoelemto se le puede aplicar estilos a los placeholder de los inputs</p>
+            <input type="text" placeholder="Ests placeholder tiene estilos">
+        </section>
+
+        <!--Sección marker-->
+        <section id="marker">
+            <h2>Marker</h2>
+            <p>Con este pseuidoelemento se le pueden aplicar estilos a las viñetas de las listas</p>
+            <ol>
+                <li>Las viñetas</li>
+                <li>tienen</li>
+                <li>estilos</li>
+            </ol>
+        </section>
+
+        <!--Sección before-->
+        <section id="before">
+            <h2>Before</h2>
+            <p>Pseudelemento que sirve para poner texto (letras, números, caracteres, etc)antes de un elemento y darle estilo</p>
+            <p class="ejemploBefore">El caracter que antecede este párrafo fue agregado con la pseudoclase before</p>
+        </section>
+
+        <!--Sección after-->
+        <section id="after">
+            <h2>After</h2>
+            <p>Con esta pseudoclase es posible agrergar algún caracter al final de un elemento y darle estilo</p>
+            <p class="ejemploAfter">El caracter al final de este párrafo fue agregado con la pseudoclase after</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="../Is, where y Has/isWhereHas.html">
+            <img src="../../Iconos/back.png">
+        </a>
+        <a href="../../HTML/enlaces.html">
+            <img src="../../Iconos/menu.png" alt="">
+        </a>
+        <a href="../Metodologia BEM/metodologiaBEM.html">
+            <img src="../../Iconos/back (1).png" alt="">
+        </a>
+        <h2>íconos by flaticon:</h2>
+        <a href="https://www.flaticon.com/" target="_blank">
+            <img src="../../Iconos/flaticon.png" alt="">
+        </a>
+    </footer>
+</body>
+</html>

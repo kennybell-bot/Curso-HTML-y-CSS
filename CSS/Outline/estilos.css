@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    background-image: url(../../Iconos/fondoNegro.jpg);
+}
+
+/*Estilos encabezado*/
+
+.encabezado{
+    background: linear-gradient(#3c3e3f,#131314);
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    border-bottom: solid #016fae 3px;
+    z-index: 1;
+    transition-property: border-bottom, color;
+    transition-duration: 1s;
+}
+
+.encabezado:hover{
+    border-bottom: solid #028dde 3px;
+}
+
+.titulo{
+    font-family: Montserrat;
+    color: #016fae;
+    text-align: center;
+}
+
+/*Estilos cuerpo*/
+
+.parrafo{
+    color: #fff;
+    font-family: Hind Madurai;
+    text-align: justify;
+}
+
+.cuerpo{
+    margin: 11vh 2vw 11vh 1vw;
+    align-items: center;
+}
+
+.contenedor{
+    width: fit-content;
+
+}
+
+.contenedor--codigo{
+    color: #fff;
+    background-color: #000;
+    padding: 3px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.seccion--contenido{
+    width: 30.1%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+    padding: 1.5%;
+    height: 80vh;
+    background-color: #3c3e3f;
+}
+
+.contenedor--valor{
+    margin: auto;
+    outline-width: 5px;
+    outline-color: #028dde;
+    outline-style: solid;
+}
+
+.contenedor--thin{
+    margin: auto;
+    outline-width: thin;
+    outline-color: #028dde;
+    outline-style: solid;
+}
+
+.contenedor--medium{
+    margin: auto;
+    outline-width: medium;
+    outline-color: #028dde;
+    outline-style: solid;
+}
+
+.contenedor--thick{
+    margin: auto;
+    outline-width: thick;
+    outline-color: #028dde;
+    outline-style: solid;
+}
+
+.contenedor--solid{
+    margin: auto;
+    outline-width: medium;
+    outline-color: #028dde;
+    outline-style: solid;
+}
+
+.contenedor--dotted{
+    margin: auto;
+    outline-width: medium;
+    outline-color: #028dde;
+    outline-style: dotted;
+}
+
+.contenedor--dashed{
+    margin: auto;
+    outline-width: medium;
+    outline-color: #028dde;
+    outline-style: dashed;
+}
+
+.contenedor--colorValor{
+    margin: auto;
+    outline-width: medium;
+    outline-color: #fff;
+    outline-style: solid;
+}
+
+/*Estilos pie de pagina*/
+
+.pieDePagina{
+    background: linear-gradient(#131314,#3c3e3f);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    border-top: solid #016fae 3px;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.link{
+    height: 80%;
+    width: 20%;
+}
+
+.link__icono{
+    height: 60%;
+    padding: 1%;
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.link__icono:hover{
+    transform: scale(1.5);
+}

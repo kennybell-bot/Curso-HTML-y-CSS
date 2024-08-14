@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(#001011,#3AAFB9,#001011);
+}
+
+header{
+    background-color: #093A3E;
+    color: #64E9EE;
+    border: solid 3px #64E9EE;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: Montserrat;
+}
+
+main{
+    background-color: #093A3E;
+    color: #64E9EE;
+    border: solid 3px #64E9EE;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+h3{
+    font-family: Montserrat;
+    color: #001011;
+}
+
+section{
+    background-color: #3AAFB9;
+    color: #001011;
+    border: solid 3px #001011;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+p, span, h4{
+    font-family: Hind Madurai;
+    margin-left: 10px;
+}
+
+/*Estilos ejemplo selectores por atributo*/
+[src="imagenSelectoresAvanzados.jpg"]{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-left: 35%;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+/*Estilos selectores por atributo que terminan de una determinada manera*/
+[src $= "jpeg"]{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    margin-left: 40%;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+/*Estilos selectores por atributo que comienzan de una determinada manera*/
+[src ^= "https"]{
+    width: 25%;
+    height: 25%;
+    border-radius: 25%;
+    margin-left: 40%;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+/*Estilos selectores descendientes sin importar en nivel de descendencia*/
+div p{
+    background-color: #093A3E;
+    margin: 0px;
+    color: #64E9EE;
+    padding: 5px;
+    width: 65%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/*Estilos selectores descendientes solo los hijos*/
+div > p{
+    background-color: #093A3E;
+    width: 50%;
+    text-align: center;
+
+}
+
+/*Estilos selectores adyacentes, el elemento más próximo*/
+span + p{
+    background-color: #093A3E;
+    width: 50%;
+    text-align: center;
+}
+
+/*Estilos selectores adyascentes todos los elementos que se encuentran al mismo nivel de jerarquía*/
+p ~ h4{
+    background-color: #093A3E;
+    width: 50%;
+    text-align: center;
+    color: #64E9EE;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.hola{
+    margin: 0;
+}

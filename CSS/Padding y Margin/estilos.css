@@ -1,0 +1,86 @@
+body{
+    background-color: #00241B;
+}
+
+h1{
+    color: #93E5AB;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #93E5AB;
+}
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #93E5AB;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4E878C;
+}
+
+.paddingNormal{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding: 20px;
+    margin: auto;
+}
+
+.paddingTop{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.paddingBottom{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.paddingLeft{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding-left: 40px;
+    margin: auto;
+}
+
+.paddingRight{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding-right: 40px;
+    margin: auto;
+}
+
+.paddingSize{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding: 40px 30px 20px 10px;
+    margin: auto;
+}
+
+.paddingHV{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding: 40px 10px;
+    margin: auto;
+}
+
+.marginUno{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding: 10px;
+    margin: 20px;
+}
+
+.marginDos{
+    width: fit-content;
+    background-color: #B5FFE1;
+    padding: 10px;
+    margin: 20px;
+}

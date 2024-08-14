@@ -1,0 +1,14 @@
+.segundoHeader{
+    color: aquamarine;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px  2px 0 #000,
+    2px  2px 0 #000;
+}
+
+.segundoParrafo{
+    color: bisque;
+    font-style: italic;
+}

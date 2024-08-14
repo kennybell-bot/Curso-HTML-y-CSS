@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Flujo de texto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Flujo de texto CSS</h1>
+    </header>
+
+    <main class="cuerpo">
+        <!--Sección white-space-->
+        <section class="cuerpo__seccion">
+            <h2 class="cuerpo__seccion__titulo">White-space</h2>
+            <p class="cuerpo__seccion__parrafo">Esta propiedad de CSS sirve para manejar los espacios en blanco de un texto (espacios y saltos de linea) dependiendo del valor que se le haya asignado.</p>
+            <!--Artículo nowrap-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">nowrap</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor hace que en el texto no hayan saltos de línea.</p>
+                <div  class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                white-space: nowrap;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--nowrap">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione praesentium, rerum eaque est optio dolorem repellat porro expedita recusandae quos voluptates animi cum velit consectetur ipsa! Alias, quia quasi.
+                </div>
+            </article>
+
+            <!--Artículo pre-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">pre</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor hace que el texto tome solamente el formato que tiene en el documento HTML</p>
+
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                white-space: pre;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--pre">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nisi beatae esse soluta illo temporibus natus consequatur ipsa, 
+                    aliquid accusantium tempora nihil aliquam sint dolorum autem sapiente,
+                    quae quo ex deserunt?
+                </div>
+            </article>
+
+            <!--Artículo pre-wrap-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">pre-wrap</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor hace que el texto tome el mismo formato que tiene en el documento HTML pero también inserta saltos de línea cuando el texto se va a desbordar </p>
+
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                white-space: pre-wrap;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--prewrap">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eligendi quaerat saepe dolores magni officiis praesentium rerum, ratione totam veniam quisquam, iusto inventore, at facere dicta doloribus soluta! Reiciendis, saepe?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eaque quibusdam? Maxime esse quos explicabo alias quo illo eaque nisi aliquam quasi, ratione dolorum dicta voluptatem corporis est, impedit praesentium.
+                    Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Et eligendi quaerat saepe dolores 
+                    magni officiis praesentium rerum, ratione totam veniam
+                    quisquam, iusto inventore, at facere dicta doloribus soluta! Reiciendis, saepe?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eaque quibusdam? Maxime esse quos explicabo alias quo illo eaque nisi aliquam quasi, ratione dolorum dicta voluptatem corporis est, impedit praesentium.
+                </div>
+            </article>            
+        </section>
+
+        <!--Seccion text-overflow-->
+        <section class="cuerpo__seccion">
+            <h2 class="cuerpo__seccion__titulo">text-overflow</h2>
+            <!--Artículo ellipsis-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">ellipsis</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor hace que cuando se desborde el texto se muestren puntos suspensivos mientras se combine con las propiedades overflow y white-space con los valores hidden y pre respectivamente.</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code >
+                        elemento{
+                            <blockquote>
+                                overflow: hidden;
+                                <br>
+                                white-space: pre;
+                                <br>
+                                text-overflow: ellipsis;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--ellipsis">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam veritatis sunt dicta, pariatur distinctio excepturi delectus perferendis incidunt, nihil, voluptatum nam! Officiis assumenda pariatur quibusdam eligendi tempore itaque laborum rem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam veritatis sunt dicta, pariatur distinctio excepturi delectus perferendis incidunt, nihil, voluptatum nam! Officiis assumenda pariatur quibusdam eligendi tempore itaque laborum rem.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam veritatis sunt dicta, pariatur distinctio excepturi delectus perferendis incidunt, nihil, voluptatum nam! Officiis assumenda pariatur quibusdam eligendi tempore itaque laborum rem.
+                </div>
+            </article>           
+        </section>
+
+        <!--Seccion word-break-->
+        <section class="cuerpo__seccion">
+            <h2 class="cuerpo__seccion__titulo">word-break</h2>
+            <!--Artículo break-all-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">break-all</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor hace que las palabras se corten en el salto de línea.</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code >
+                        elemento{
+                            <blockquote>
+                                word-break: break-all;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--breakall">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nesciunt quam facilis tenetur unde molestias consectetur voluptas quas illo dicta quaerat minima ad animi dolorum accusamus numquam, possimus dolores! Ipsa?
+                </div>
+            </article>
+
+            <!--Artículo keep-all-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">keep-all</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Evita la ruptura de palabras</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code >
+                        elemento{
+                            <blockquote>
+                                word-break: keep-all;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--keepall">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium eveniet consequatur reiciendis expedita. Cum nihil molestiae atque. Aliquid expedita ipsam maxime. Commodi dolor excepturi voluptas deleniti ab magnam ut sequi.
+                </div>
+            </article>   
+
+            <!--Artículo auto-phrase-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">auto-phrase</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor detecta si la palabra que esta en el salto de línea se puede dividir por sílabas para hacer el salto de esta forma, si no se puede pone la palabra entera en la siguiente línea. Este es aún un valor experimental.</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code >
+                        elemento{
+                            <blockquote>
+                                word-break: auto-phrase;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+            </article>
+
+        </section>
+
+        <!--Seccion word-wrap-->
+        <section class="cuerpo__seccion">
+            <h2 class="cuerpo__seccion__titulo">word-wrap</h2>
+            <!--Artículo break-word-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">break-word</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este hace que la palabra se rompa en sílabas en caso de que se necesite para el salto de línea</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                word-wrap: break-word;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--breakWord">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolor debitis, aliquid ab fugiat multiplicacion voluptatibus quasi eveniet, soluta quod cupiditate dolore obcaecati delectus dicta perspiciatis est molestias tempore nulla repellendus!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolor debitis, aliquid ab fugiat voluptatibus quasi eveniet, soluta quod cupiditate dolore obcaecati delectus dicta perspiciatis est molestias tempore nulla repellendus!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolor debitis, aliquid ab fugiat voluptatibus quasi eveniet, soluta quod cupiditate dolore obcaecati delectus dicta perspiciatis est molestias tempore nulla repellendus!
+                </div>
+            </article>
+            
+            <!--Artículo anywhere-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">anywhere</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Este valor hace que las palabras largas se dividan en caso de que se desborden</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                word-wrap: anywhere;
+                            </blockquote>
+                        }
+                </div>
+                </code>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--anywhere">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, debitis nemo impedit ipsa omnis eofjnakjfdhadkfhfgadfgagfdgfgaggfhghjyjjydjhysjhjdhj ombligodjfafklhfkgldffv, architecto quas rerum repellendus sequi et saepe aut consectetur hic esse blanditiis. Impedit, sapiente.
+                </div>
+            </article>            
+        </section>
+
+        <!--Seccion text-wrap-->
+        <section class="cuerpo__seccion">
+            <h2 class="cuerpo__seccion__titulo">text-wrap</h2>
+            <!--Artículo balance-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">balance</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Blancear el texto para que en todas las líneas tengan mas o menos la misma longitud (sirve para más que todo títulos)</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                text-wrap: balance;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--balance">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, neque voluptate. Sit aspernatur quidem doloremque aliquid? Laboriosam maxime accusantium, autem impedit assumenda nesciunt, incidunt nisi modi fuga omnis non. Aliquam.
+                </div>
+            </article>
+
+            <!--Artículo pretty-->
+            <article class="cuerpo__seccion__articulo">
+                <h3 class="cuerpo__seccion__articulo__titulo">pretty</h3>
+                <p class="cuerpo__seccion__articulo__parrafo">Sirve para ecitar palabras viudas y huérfanas en el texto</p>
+                <div class="cuerpo__seccion__articulo__codigo">
+                    <code>
+                        elemento{
+                            <blockquote>
+                                text-wrap: pretty;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+                <div class="cuerpo__seccion__articulo__ejemplo ejemplo--pretty">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nobis qui impedit exercitationem? Sapiente saepe omnis nesciunt asperiores rerum molestiae neque consequatur deleniti, in, veniam facilis fuga, repellendus aspernatur vitae?
+                </div>
+            </article>            
+        </section>
+    </main>
+
+    <footer class="pieDePagina">
+        <a href="../Overflow/overflow.html" class="pieDePagina__enlace" title="Página anterior">
+            <img src="../../Iconos/back.png" class="pieDePagina__enlace__icono">
+        </a>
+
+        <a href="https://www.flaticon.com/" target="_blank" class="pieDePagina__enlace" title="Íconos" target="_blank">
+            <img src="../../Iconos/flaticon.png" class="pieDePagina__enlace__icono">
+        </a>
+
+        <a href="../../HTML/enlaces.html" class="pieDePagina__enlace" title="Menú principal">
+            <img src="../../Iconos/home.png" class="pieDePagina__enlace__icono">
+        </a>
+        
+        <a href="https://youtu.be/ELSm-G201Ls?list=RDCMUCtoo4_P6ilCj7jwa4FmA5lQ" target="_blank" class="pieDePagina__enlace" title="Fuente">
+            <img src="../../Iconos/youtube.png" class="pieDePagina__enlace__icono">
+        </a>
+
+        <a href="../object fit y position/objectFitPosition.html" class="pieDePagina__enlace" title="Página siguiente">
+            <img src="../../Iconos/back (1).png" class="pieDePagina__enlace__icono">
+        </a>
+    </footer>
+</body>
+</html>

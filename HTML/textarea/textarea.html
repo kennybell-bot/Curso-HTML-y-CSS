@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Textarea HTML</title>
+</head>
+<body>
+
+    <h1>Textarea HTML</h1>
+    <p>Un textarea es un input con mayor capacidad de texto</p>
+    <div>
+        <textarea>Esto es un textarea</textarea>
+    </div>
+
+    <p>Con el min-width al 100% se hace qeu el textarea ocupe todo el ancho del contenedor</p>
+    <textarea class="textAreaAncho">Esto es un textarea que ocupa todo el anco del contenedor</textarea>
+
+    <h2>Resize</h2>
+
+    <p>Con resize se puede establecer en que direcciones se puede redimensionar el textarea</p>
+
+    <div class="content">
+        <p>Con el valor both se puede redimensionar en ambas direcciones</p>
+        <textarea class="textAreaResizeBoth">Esto es un textarea que se puede expandir en ambas direcciones</textarea>
+
+        <p>Con el valor none se bloquea el textarea para que no se pueda redimensioar</p>
+        <textarea class="textAreaResizeNone">Esto es un textarea que no se puede redimensionar</textarea>
+
+        <p>Con el calor horizontal solo se puede redimensionar de manera horizontal</p>
+        <textarea class="textAreaResizeHorizontal">Esto es un textarea que solo se puede redimensioar de manera horizontal</textarea>
+
+        <p>Con el valor vertical solo se puede redimensionar de manera vertical</p>
+        <textarea class="textAreaResizeVertical">Esto es un textarea que solo se puede redimensioar de manera vertical</textarea>
+    </div>
+    
+    <h2>Propiedades</h2>
+
+    <p>La propiedad readonly hace que el contenido del textarea solo se pueda leer mas no modificar</p>
+    <textarea class="textAreaReadonly" readonly>Este textarea es solo de lectura</textarea>
+
+    <p>La propieadad disabled desactiva el textarea para que no se pueda modificar ni se envie su contenido cuando se haga envio del formulario</p>
+    <textarea disabled>Este textarea esta desactivado</textarea>
+
+    <p>La propieadad maxlenght establece la cantidad maxima de caracteres que puede ingresar el usuario. Para el siguiente textarea es de 5 caracteres, pruebe</p>
+    <textarea maxlength="5"></textarea>
+
+    <p>La propiedad rows establece la cantidad de lineas que el usario puede ingresar antes de que aparezca el scroll bar</p>
+    <textarea rows="4">Este textarea tiene de un valor de 4 rows</textarea>
+
+    <div>
+        <a href="../enlaces.html">Volver</a>
+    </div>
+    
+</body>
+</html>

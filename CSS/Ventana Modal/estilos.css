@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    background-image: url(../../Iconos/fondo.jpg);
+}
+
+.encabezado{
+    background: linear-gradient(to right,#0344f6,#3183ee 65%);
+    box-shadow: 5px 0px 10px #000;
+    position: relative;
+    text-align: center;
+    height: 50px;
+    padding: 5px;
+}
+
+.titulo{
+    margin: 0;
+    font-family: Montserrat;
+    margin: auto;
+    display: inline;
+    position: relative;
+}
+
+.enlace{
+    display: inline;
+    background-color: #B7B5B3;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.enlace__icono{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.enlace:hover{
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.enlace__icono:hover{
+    width: 45px;
+    height: 45px;
+}
+
+
+.enlace--izquierda{
+    left: 0px;
+}
+
+.enlace--derecha{
+    right: 0px;
+}
+
+.parrafo{
+    font-family: Hind Madurai;
+}
+
+.ejemploCodigo{
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+.seccion{
+    margin: 5px;
+}
+
+.pieDePagina{
+    background: linear-gradient(to top, #000,transparent);
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cuadroDialogo{
+    border-radius: 10px;
+    background-color: #E5E7E6;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cuadroDialogo__boton{
+    font-family: Hind Madurai;
+}

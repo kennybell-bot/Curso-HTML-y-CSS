@@ -1,0 +1,117 @@
+body{
+    background-color: #F1F7ED;
+}
+
+h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    border-bottom: 5px solid #54494B;
+    font-size: 4rem;
+}
+
+h2{
+    background-color: #B33951;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fondoImagen{
+    width: 474px;
+    height: 296px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    margin: auto;
+}
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    width: fit-content;
+    background-color: #54494B;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fondoContain{
+    width: 400px;
+    height: 200px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-size: contain;
+    margin: auto
+}
+
+.fondoTop{
+    width: 300px;
+    height: 200px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: top;
+    margin: auto
+}
+
+.fondoBottom{
+    width: 300px;
+    height: 200px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: bottom;
+    margin: auto
+}
+
+.fondoRight{
+    width: 300px;
+    height: 200px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: right;
+    margin: auto
+}
+
+.fondoLeft{
+    width: 300px;
+    height: 200px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: left;
+    margin: auto
+}
+
+.noRepeat{
+    width: auto;
+    background-color: antiquewhite;
+    height: 200px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: auto
+}
+
+.repeatX{
+    width: auto;
+    height: 296px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: left;
+    background-repeat: repeat-x;
+    margin: auto
+}
+
+.repeatY{
+    width: auto;
+    height: 1000px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-position: left;
+    background-repeat: repeat-y;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+.attachmentFixed{
+    width: 474px;
+    height: 296px;
+    background-image: url(https://th.bing.com/th/id/OIP.AdEsTj8zQ5mzXdBPNetBtgHaEo?rs=1&pid=ImgDetMain);
+    background-attachment: fixed;
+    margin:auto;
+}

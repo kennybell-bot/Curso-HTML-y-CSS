@@ -1,0 +1,37 @@
+body{
+    background-color: #241023;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: Montserrat;
+    color: white;
+    background-color: #6B0504;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #D5E68D;
+}
+
+h2{
+    font-family: Montserrat;
+    background: linear-gradient(to right,#6B0504, transparent);
+    padding: 5px;
+}
+
+p, ul, div{
+    font-family: Hind Madurai;
+    margin-left: 10px;
+}
+
+video{
+    width: 50%;
+    box-shadow: 0px 0px 10px 1px #D5E68D;
+    margin-left: 25%;
+}
+
+audio{
+    box-shadow: 0px 0px 10px 1px #D5E68D;
+    margin-left: 25%;
+    background-color: #D5E68D;
+}

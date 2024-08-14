@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Herencia CSS</title>
+</head>
+<body>
+
+    <header>
+        <h1>Herencia CSS</h1>
+    </header>
+
+    <main>
+        <p class="parrafoNormal">Algunas propieadades de CSS son heredadas, es decir un elemento que esta contenido dentro de otro toma como valor de una determinada propiedad el que tenga su contenedor. Sin embarogo, esto solo pasa con elementos que no tengan un valor definido por defecto.</p>
+
+        <!--Sección inherit-->
+        <section>
+            <h2>Valor inherit</h2>
+            <p class="parrafoNormal">Este valor sirve para establecer que el elementotome el valor del contenedor, este irá buscando este valor de forma ascendente y si no encuentra valor alguno toma el que le de el navegador por defecto</p>
+            <div class="ejemploIherit">
+                <p class="parrafoEjemploInherit">Este es un ejemplo de un párrafo que está dentro de un div con fuente Lora en itálica</p>
+            </div>
+        </section>
+
+        <!--Sección initial-->
+        <section>
+            <h2>Valor initial</h2>
+            <p class="parrafoNormal">Este valor sirve para expresar que el elemento conserve su valor por defecto, es decir evitar que este herede de sus contendores</p>
+            <div>
+                <p class="parrafoEjemploInitial">Este es un ejemplo de un párrafo que está dentro de un div con fuente Lora en itálica, pero sin embargo no la aplica, porque tiene el valor initial.</p>
+            </div>
+        </section>
+
+        <!--Sección unset-->
+        <section>
+            <h2>Valor unset</h2>
+            <p class="parrafoNormal">Este valor restea la propiedad a su valor heredado</p>
+            <div>
+                <p class="parrafoEjemploUnset">Este es un ejemplo de un párrafo que está dentro de un div con fuente Lora en itálica, esta si se aplica porque la hereda del div.</p>
+            </div>
+        </section>
+
+        <!--Sección revert-->
+        <section>
+            <h2>Valor revert</h2>
+            <p class="parrafoNormal">Este valor hace lo mismo que el anterior, la diferencia radica en que si el usuario tenga una personalización en el navegador, el valor que tomará será el de dicha personalización</p>
+            <div>
+                <p class="parrafoEjemploRevert">Este es un ejemplo de un párrafo que está dentro de un div con fuente Lora en itálica, la aplica porque respeta la fuente que tiene el div cuando tiene el valor revert.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Enlace para volver la menú principal-->
+        <a href="../../HTML/enlaces.html">Volver</a>
+    </footer>
+
+</body>
+</html>

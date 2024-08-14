@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio y Video HTML</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoHTML.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <h1>Audio y video HTML</h1>
+
+    <!--Seccion video-->
+    <h2>Video</h2>
+
+    <p>Para poner videos se utilizan las etiquetas video, como valor del atributo src se le pone la ruta del video.</p>
+    <p>Se puede poner un mensaje en medio de las etiquetas para cuando el navegador no soporte el video.</p>
+    <ul>
+        <li>Para que el video se reproduzca automáticamente se ponen los atributos autoplay y muted.</li>
+        <li>Con el atributo controls se puede poner la barra de tiempo del video, el botón para pausar el video y el control de volumen</li>
+        <li>Con el atributo loop se puede hacer que el video se reproduzca en bucle</li>
+    </ul>
+    <video controls autoplay muted src="Screen Recording 2024-06-27 132116.mp4">Este es el mensaje que aparece cuando el video no soporta el video</video>
+    <p>A los videso se les puede poner fondos con el uso de CSS</p>
+
+    <h2>Etiqueta track</h2>
+
+    <p>Es la etiqueta que nos permite poner subtitulos, se pone entre las etiquetas video</p>
+    <ul>
+        <li>En el atributo src se pone la ruta del archivo vtt de los subtitulos</li>
+        <li>Para que los subtitulos apereczcan por defecto se pone el atributo default (este no lleva valores)</li>
+        <li>Con el atributo srclang se puede decir el idioma en el que estan los sutitulos poniendo su abreviacion como valor</li>
+        <li>Con el atributo label se puede modificar el texto del idioma de los subtitulos (el que aparece debajo de la palabra subtitulos)</li>
+    </ul>
+    <div>
+        <video controls src="videoTrack.mp4">
+            <track srclang="es" src="subtitulos.vtt" label="Texto modificado">
+        </video>
+    </div>
+    <p>Los estilos de los subtitulos se cambian con javascript o editando el archivo vtt</p>
+
+    <!--Seccion Audio-->
+    <h2>Audio</h2>
+    <p>Para pooner un audio se usan las etiquetas audio, con la ruta del audio como valor del atributo src</p>
+    <p>Tambien se le ponen los atributos controls, para que aparezcan los controles</p>
+    <audio src="ejemploAudio.m4a" controls loop></audio>
+
+    <div>
+        <a href="../enlaces.html">Volver</a>
+    </div>
+</body>
+</html>

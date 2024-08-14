@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Select, datalist y option</title>
+</head>
+<body>
+    <h1>Select, datalist y option</h1>
+
+    <h2>Select</h2>
+    <p>Sirve para elgir una opción entre varias, se utiliza la etiqueta de nombre select y para cada una de las opciones se utiliza la etiqueta option</p>
+    <p>Dentro la etiqueta option, el valor del atributo value va ser el valor que se le enviará al backend y la etiqueta name será el que identifique al elemento en el backend</p>
+    <p>A los elementos de la etiquta option no se les puede modificar el padding y el margin, si al caso el background</p>
+    <select name="select">
+        <option value="valor1">Opcion 1</option>
+        <option value="valor2">Opcion 2</option>
+        <option value="valor3">Opcion 3</option>
+    </select>
+
+    <h2>Datalist</h2>
+    <p>El datalist es una mezcla entre el input y el select, se usa con la etiqueta datalist. Se puede asociar a un input asingnandole un id al datalist y poniendo este id como valor en el atributo list del input. el atributo name es el que identificar el elemento ante el backend</p>
+    <input type="text" list="datalist">
+    <datalist id="datalist">
+        <option value="valor1">Descripcion 1</option>
+        <option value="valor2">Descripcion 2</option>
+        <option value="valor 3">Descripcion 3</option>
+    </datalist>
+
+    <div>
+        <a href="../enlaces.html">Volver</a>
+    </div>
+    
+</body>
+</html>

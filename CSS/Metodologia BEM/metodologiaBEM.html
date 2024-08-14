@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Metodología BEM</title>
+</head>
+<body>
+
+    <header>
+        <h1>Metodología BEM</h1>
+        <p>(Bloque - Elemento - Modificador)</p>
+
+        <nav>
+            <a href="#Bloque">Bloque</a>
+            <a href="#Elemento">Elemento</a>
+            <a href="Modificador">Modificador</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Esta medtodología permite la manipulación de estilos CSS de tal forma que el código sea:</p>
+        <ul>
+            <li>Resutilizable definiendo un estilo base y aplicándolo a diferentes elementos con el uso de modificadores.</li>
+            <li>Legible, especificando la funcionalidad de cada elemento en el nombre de sus clases, y sin problemas de especificidad</li>
+        </ul>
+
+        <!--Sección Bloque-->
+        <section id="Bloque">
+            <h2>Bloque</h2>
+            <p>Es todo aquel elemento que no necesita de otros elementos para existir o tener sentido y por lo tanto puede ser reutilizable en culquier lugar de la página y cuantas veces se necesite. Para aplicar estilos a este tipo de elementos, se les asigna clases cuyos nombres expresen de manera precisa sun naturaleza</p>
+            <div>
+                <code>
+                    &lt;bloque class="nombreBloque"&gt; 
+                    &lt;/bloque&gt;
+                </code>
+            </div>
+        </section>
+
+        <!--Sección Elemento-->
+        <section id="Elemento">
+            <h2>Elemento</h2>
+            <p>Son los que componen al bloque. Para la aplicacion de estilos, se sugiere asignarles una clase cuyo nombre se componga del nombre del bloque al que pertenecen seguido de dos rayas al piso y el elemento que es.</p>
+            <div>
+                <code>
+                    &lt;bloque class="nombreBloque"&gt;
+                    <blockquote>
+                        &lt;elemento class="bloque__nombreElemento"&gt; &lt;/elemento&gt;
+                        <br>
+                        &lt;elemento class="bloque__nombreElemento"&gt; &lt;/elemento&gt;
+                    </blockquote>
+                    &lt;/bloque&gt;
+                </code>
+            </div>
+        </section>
+
+        <!--Sección Modificador-->
+        <section id="Modificador">
+            <h2>Modificador</h2>
+            <p>Son aquellas clases que serviran para establecer estilos particulares a elementos y bloques según sea la necesidad. Para su nombramiento se usa el nombre del elemento que se modifica y la característica que se le esta aplicando.</p>
+            <div>
+                <code>
+                    &lt;elemento class="bloque__nombreElemento nombreElemento--caracteristica"&gt; &lt;/elemento&gt;
+                </code>
+            </div>
+        </section>
+
+        <!--Sección ejeplo-->
+        <section>
+            <h2>Ejemplo</h2>
+            <p>Para ejemplficar lo anterior se tienen estas dos listas, ambas con la clase lista, pero la segunda tiene la clase modificadora lista--fondo</p>
+            <ul class="lista">
+                <li class="lista__item">Elemento 1</li>
+                <li class="lista__item">Elemento 2</li>
+                <li class="lista__item">Elemento 3</li>
+            </ul>
+            <ul class="lista lista--fondo">
+                <li class="lista__item">Elemento 1</li>
+                <li class="lista__item">Elemento 2</li>
+                <li class="lista__item">Elemento 3</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="../Pseudoelementos/pseudoelementos.html">
+            <img src="../../Iconos/back.png">
+        </a>
+        <a href="../../HTML/enlaces.html">
+            <img src="../../Iconos/menu.png" alt="">
+        </a>
+        <a href="../Display/display.html">
+            <img src="../../Iconos/back (1).png" alt="">
+        </a>
+        <h2>íconos by flaticon:</h2>
+        <a href="https://www.flaticon.com/" target="_blank">
+            <img src="../../Iconos/flaticon.png" alt="">
+        </a>
+    </footer>
+
+</body>
+</html>

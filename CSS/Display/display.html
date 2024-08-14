@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Display CSS</title>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Display CSS</h1>
+        <nav class="menu">
+            <a href="#block" class="menu__enlace">Block</a>
+            <a href="#inline" class="menu__enlace">Inline</a>
+            <a href="#inline-block" class="menu__enlace">Inline block</a>
+            <a href="#none" class="menu__enlace">None</a>
+        </nav>
+    </header>
+
+    <main class="cuerpo">
+        <p class="cuerpo__parrafo">Display es una propiedad de css que permite establecer la dispocisión de un grupo de elementos.</p>
+
+        <!--Sección block-->
+        <section id="block" class="seccion">
+            <h2 class="seccion__titulo">Block</h2>
+            <p class="seccion__parrafo">Esta propiedad hace que los elementos se dispongan en manera de bloque, ocupando todo el ancho disponible y apilandose unos encima de otros. Esta permite que se modifiquen valores de padding y margin, asi como tambien alto y ancho</p>
+            <ul class="lista">
+                <li class="lista__item">item 1</li>
+                <li class="lista__item">item 2</li>
+                <li class="lista__item">item 3</li>
+            </ul>
+        </section>
+
+        <!--Sección inline-->
+        <section id="inline" class="seccion">
+            <h2 class="seccion__titulo">Inline</h2>
+            <p class="seccion__parrafo">Permite disponer los elementos linealmente, es decir uno al lado del otro. Aquí no hay posibilidad de modificar ancho ni alto, además el margin y padding solo se podrán modificar de manera horizontal</p>
+            <ul class="lista">
+                <li class="lista__item lista__item--inline">item 1</li>
+                <li class="lista__item lista__item--inline">item 2</li>
+                <li class="lista__item lista__item--inline">item 3</li>
+            </ul>
+        </section>
+
+        <!--Sección inline block-->
+        <section id="inline-block" class="seccion">
+            <h2 class="seccion__titulo">Inline block</h2>
+            <p class="seccion__parrafo">Dispone los elementos como en inline pero conservando las propiedades de la dispocisión block, es decir que si se podrán modificar valores de alto y ancho, así como también el margin y el padding serán alterables en todas direcciones.</p>
+            <ul class="lista">
+                <li class="lista__item lista__item--inlineBlock">item 1</li>
+                <li class="lista__item lista__item--inlineBlock">item 2</li>
+                <li class="lista__item lista__item--inlineBlock">item 3</li>
+            </ul>
+        </section>
+
+        <!--sección none-->
+        <section id="none" class="seccion">
+            <h2 class="seccion__titulo">None</h2>
+            <p class="seccion__parrafo">Propiedad con la que se hace que un elemento no ocupe ningún espacio en la página y no sea visible para ningún tipo de selección.</p>
+            <ul class="lista lista--none">
+                <li class="lista__item">item 1</li>
+                <li class="lista__item">item 2</li>
+                <li class="lista__item">item 3</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="pieDePagina">
+        <a href="../Metodologia BEM/metodologiaBEM.html">
+            <img src="../../Iconos/back.png" class="pieDePagina__imagen">
+        </a>
+        <a href="../../HTML/enlaces.html">
+            <img src="../../Iconos/menu.png" class="pieDePagina__imagen">
+        </a>
+        <a href="../Position/postition.html">
+            <img src="../../Iconos/back (1).png" class="pieDePagina__imagen">
+        </a>
+        <h2>íconos by flaticon:</h2>
+        <a href="https://www.flaticon.com/" target="_blank">
+            <img src="../../Iconos/flaticon.png" class="pieDePagina__imagen">
+        </a>
+    </footer>
+
+</body>
+</html>

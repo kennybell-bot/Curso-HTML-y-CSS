@@ -1,0 +1,164 @@
+body{
+    background-color: #233D4D;
+}
+
+:is(h1,h2){
+    font-family: Montserrat;
+}
+
+:is(p,ul, a){
+    font-family: Hind Madurai;
+}
+
+/*Estilos header*/
+header{
+    background-color: #FCCA46;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+header:hover{
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+h1{
+    margin: 0;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    background-color: #FE7F2D;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+header a:hover{
+    box-shadow: 0px 0px 5px #233D4D;
+}
+
+/*Estilos main*/
+
+main{
+    background-color: #FCCA46;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main:hover{
+    box-shadow: 0px 0px 5px #ffffff;
+}
+
+main>p{
+    margin: 0;
+}
+
+div{
+    background-color: #233D4D;
+    color: #ffffff;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0px 0px 20px #FE7F2D;
+}
+
+/*Estilos secciones*/
+
+section{
+    background-color: #FE7F2D;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.ejemploFirstLetter{
+    margin: 5px;
+    text-align: center;
+}
+
+
+.ejemploFirstLetter::first-letter{
+    font-family: Lora;
+    font-style: italic;
+    font-size: 3em;
+}
+
+.ejemploFirstLine{
+    margin: 5px;
+    text-align: center;
+    text-align: justify;
+}
+
+.ejemploFirstLine::first-line{
+    font-family: Lora;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.ejemploSelection{
+    margin: 5px;
+    text-align: center;
+    text-align: justify;
+}
+
+.ejemploSelection::selection{
+    background-color: #233D4D;
+    color: #ffffff;
+}
+
+input{
+    border-radius: 5px;
+    padding: 2px;
+}
+
+input::placeholder{
+    background-color: #233D4D;
+    color: #ffffff;
+    font-family: Lora;
+    font-style: italic;
+}
+
+ol{
+    font-family: Hind Madurai;
+}
+
+ol li::marker{
+    font-family: Lora;
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.ejemploBefore::before{
+    font-size: 1.5em;
+    content: '©';
+}
+
+.ejemploAfter::after{
+    font-size: 1.5em;
+    content: '©';
+}
+
+/*Estilos footer*/
+
+footer{
+    background-color: #FCCA46;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+footer h2{
+    margin: 0;
+}
+
+footer img{
+    background-color: #FE7F2D;
+    border-radius: 50%;
+}

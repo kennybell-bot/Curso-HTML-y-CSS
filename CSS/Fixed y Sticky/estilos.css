@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-image: url(../../Iconos/fondo.jpg);
+}
+
+/*Estilos encabezado*/
+.encabezado{
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(to right,#0344f6,#3183ee 65%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 3px 10px #000;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.titulo{
+    font-family: Montserrat;
+    margin: 0;
+}
+
+/*Estilos cuerpo*/
+
+.cuerpo{
+    margin: 10px;
+    margin-bottom: 60px;
+    overflow: visible;
+}
+
+.parrafo{
+    font-family: Hind Madurai;
+    margin: 16px;
+    text-align: justify;
+}
+
+.seccion{
+    width: fit-content;
+    height: fit-content;
+    background-color: #8d8686;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+.seccion__titulo{
+    font-family: Montserrat;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+.seccion--aLaDerecha{
+    margin-left: 50%;
+}
+
+.contenedor{
+    width: fit-content;
+    height: fit-content;
+    background-color: #f77a05;
+    border-radius: 5px;
+}
+
+.contenedor--codigo{
+    background-color: #000;
+    color: #fff;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.seccion--fixed{
+    position: fixed;
+}
+
+.posicion--sticky{
+    position: sticky;
+    top: 60px;
+    margin-left: 50%;
+}
+
+/*Estilo pie de página*/
+.enlace{
+    display: inline;
+    background-color: #B7B5B3;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.enlace__icono{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.enlace:hover{
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.enlace__icono:hover{
+    width: 45px;
+    height: 45px;
+}
+
+.pieDePagina{
+    background: linear-gradient(to top, #000000ac 30%,transparent);
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

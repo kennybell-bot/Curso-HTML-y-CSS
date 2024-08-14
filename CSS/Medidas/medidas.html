@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Medidas CSS</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1>Medidas CSS</h1>
+
+        <h2>Medidas absolutas</h2>
+
+        <h3>Pixeles (px)</h3>
+        <div class="pixeles">80px x 60px</div>
+
+        <h3>Centimetros(cm), milimetros(mm) y pulgadas(in)</h3>
+        <p>Son utilizadas comunmente para impresion</p>
+        <div class="centimetros">3cm x 2 cm</div>
+
+        <h2>Medidas Relativas para interfaces responsive</h2>
+
+        <h3>Porcentajes</h3>
+        <p>Representan el pocentaje del espacio del contenedor que va a ocupar el elemento</p>
+        <div class="contenedorUno">
+            <div class="hijoUno">50%</div>
+        </div>
+
+        <h3>em</h3>
+        <p>Se basa en los valores que tenga el padre para la fuente para establecer su unidad minima de medida. Si no encuentra dicha unidad en el padre, seguira ascendiendo en los contenedores hasta que encuentre algun valor de referencia, si no lo logra este tomara los valores por defecto que establce el navegador</p>
+        <div class="em"> 2em </div>
+
+        <h3>rem</h3>
+        <p>Este toma como valor de referencia los valores de la raiz, es decir del elemento html</p>
+        <div class="rem">3 rem</div>
+
+        <h3>Viewport Height vh</h3>
+        <p>Este sirve para expresar que el elemmento debe ocupar cierto porcentaje del espacio disponible en la pantalla, definido por el tamaño de la ventana que tenga el navegador para cada instante</p>
+        <div class="vh">50vh x 10vh</div>
+
+        <h3>Viewport width vw</h3>
+        <p>Sirve para expresar que el elemento ocupe cierto porcentaje de el espacio disponibleen pantalla</p>
+        <div class="vw">50vw x 10vw</div>
+
+        <a href="../../HTML/enlaces.html">Volver</a>
+
+    </body>
+</html>

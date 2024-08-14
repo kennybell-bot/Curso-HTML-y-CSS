@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoHTML.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Accesibilidad web</title>
+</head>
+<body>
+    <h1>Accesibilidad web</h1>
+
+    <p>Consiste en hacer la página web navegable para personas con discapacidad haciendo que el DOM generado por el navegador sea fácilmenten interpretable para la tecnología de acesibilidad (como por ejemplo la extensión Chrome Vox).Hacer la página accesible hace que tenga un mejor pocisionamiento. La parte de lighthouse en el navegador.</p>
+
+    <h2>Atributo alt imágenes</h2>
+    <p>Poniendo la descripcion de la imágen como valor del atribut alt, chrome vox va a leer dicha descripción cuando se le haga click a la imagen</p>
+    <div class="img">
+        <img src="https://reviewauto.com.br/wp-content/uploads/2022/11/Volkswagen-Novo-Polo.jpg" alt="Imagen de un carro como ejemplo">
+    </div>
+
+    <h2>Atributo aria label enlaces</h2>
+    <p>Con este atributo, se puede poner una desciipción del enlace para que sea leida por el asistente de voz cuando se le ponga en raton encima.</p>
+    <a href="https://www.youtube.com/watch?v=Yhz6GHxJYsU" aria-label="Enlace que lleva a un video de youtube acerca de maincra" target="_blank">Ejemplo enlace</a>
+
+    <h2>Atributo role</h2>
+    <p>Sirve para poner una descripción del contenido y uso a un elemento de html</p>
+    <div role="tablist">
+        Ejemplo div con descripción haciendo uso de role tablist
+    </div>
+
+    <a href="../enlaces.html">Volver</a>
+</body>
+</html>

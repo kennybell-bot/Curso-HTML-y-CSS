@@ -1,0 +1,88 @@
+body{
+    background-color: #4B6858;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    background-color: #498C8A;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.gradienteLineal{
+    background: linear-gradient(#4D4730 ,transparent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.gradienteDerecha{
+    background: linear-gradient(to right,#4D4730 ,transparent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.gradienteizquierda{
+    background: linear-gradient(to left,#4D4730  ,transparent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.gradienteTop{
+    background: linear-gradient(to top,#4D4730  ,transparent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.gradienteBottom{
+    background: linear-gradient(to bottom,#4D4730  ,transparent);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.gradienteMulticolor{
+    background: linear-gradient(#4D4730  ,transparent,#46ACC2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    text-align: center;
+}
+
+.gradienteTransparentePorcentaje{
+    background: linear-gradient(#4D4730  ,transparent 92%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    text-align: center;
+    height: 3rem;
+}
+
+.gradienteRadial{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 40px;
+    background: radial-gradient(#4D4730  ,transparent 99%);
+    text-align: center;
+}
+
+.gradienteConico{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding: 40px;
+    background: conic-gradient(#4D4730  ,transparent 99%);
+    text-align: center;
+}

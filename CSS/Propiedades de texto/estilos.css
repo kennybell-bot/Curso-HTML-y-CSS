@@ -1,0 +1,39 @@
+.parrafoColor{
+    color: blueviolet;
+}
+
+.parrafoFuente{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parrafoTamaño{
+    font-size: 30px;
+}
+
+.parrafoGrosor{
+    font-weight: bold;
+}
+
+.parrafoEstilo{
+    font-style: italic;
+}
+
+.parrafoAlinear{
+    text-align: center;
+}
+
+.parrafoSubrayar{
+    text-decoration: overline;
+}
+
+.parrafoInterlineado{
+    line-height: 2;
+}
+
+.parrafoInterletrado{
+    letter-spacing: 6px;
+}
+
+.parrafoTransform{
+    text-transform: capitalize;
+}

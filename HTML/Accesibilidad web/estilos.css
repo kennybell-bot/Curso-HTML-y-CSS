@@ -1,0 +1,41 @@
+body{
+    background-color: #FFDBDA;
+}
+
+h1{
+    background-color: #DB7F8E;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    box-shadow: 0px 0px 10px 1px #000;
+}
+
+p{
+    font-family: Hind Madurai;
+    margin: 10px;
+
+}
+
+div,a{
+        font-family: Hind Madurai;
+        margin: 20px;
+}
+
+h2{
+    font-family: Montserrat;
+    background: linear-gradient(to right,#DB7F8E, transparent);
+    padding: 5px;
+}
+
+.img{
+    width: fit-content;
+    margin: auto;
+}
+
+img{
+    width: 20vw;
+    height: 20vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #000;
+}

@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    background-image: url(../../Iconos/fondoNegro.jpg);
+}
+
+/*Estilos cuerpo*/
+.contenido{
+    margin: 11vh 2vw;
+}
+
+.subtitulo{
+    color: #016fae;
+    font-family: Montserrat;
+}
+
+.parrafo{
+    color: #ffff;
+    font-family: Hind Madurai;
+    text-align: justify;
+}
+
+.parrafo--nota{
+    font-family: Lora;
+    font-style: italic;
+}
+
+.contenedor{
+    color: #ffff;
+    background-color: #000;
+    width: 30%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 5px;
+    margin-bottom: 0.5%;
+}
+
+.articulo{
+    margin: 2%;
+}
+
+/*Estilos encabezado*/
+
+.encabezado{
+    background: linear-gradient(#3c3e3f,#131314);
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    top: 0;
+    border-bottom: solid #016fae 3px;
+    z-index: 1;
+    transition-property: border-bottom, color;
+    transition-duration: 1s;
+}
+
+.encabezado:hover{
+    border-bottom: solid #028dde 3px;
+}
+
+.titulo{
+    font-family: Montserrat;
+    color: #016fae;
+    text-align: center;
+}
+
+/*Estilos pie de pagina*/
+
+.pieDePagina{
+    background: linear-gradient(#131314,#3c3e3f);
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    border-top: solid #016fae 3px;
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.link{
+    height: 80%;
+    width: 20%;
+}
+
+.link__icono{
+    height: 60%;
+    padding: 1%;
+    border-radius: 50%;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.link__icono:hover{
+    transform: scale(1.5);
+}

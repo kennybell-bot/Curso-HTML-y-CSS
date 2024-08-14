@@ -1,0 +1,184 @@
+body{
+    background-color: #080708;
+}
+
+/*Estilos header*/
+header{
+    background-color: #C8ADC0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    padding: 6px;
+    font-family: Montserrat;
+}
+
+.barraBusqueda{
+    margin: auto;
+    width: fit-content;
+}
+
+a{
+    margin: 5px;
+    background-color: #EDD3C4;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: Hind Madurai;
+    text-decoration: none;
+    color:#080708;
+}
+
+/*Estilos main*/
+main{
+    background-color: #C8ADC0;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.parrafoIntroduccion{
+    border: solid 10px #C8ADC0;
+    border-radius: 10px;
+}
+
+/*Estilos sections*/
+section{
+    background-color: #EDD3C4;
+    margin: 10px;
+    border: solid 5px #EDD3C4;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+h2{
+    font-family: Montserrat;
+    margin: 1px;
+}
+
+p{
+    font-family: Hind Madurai;
+}
+
+section > p{
+    margin-left: 10px;
+}
+
+div{
+    margin: 5px 15px 10px 15px;
+    padding: 1px;
+    font-family: Hind Madurai;
+    border-radius: 10px;
+}
+
+.ejemploHover:hover{
+    background-color: #C8ADC0;
+    font-family: Lora;
+    font-style: italic;
+}
+
+.ejemploActive:active{
+    background-color: #C8ADC0;
+    font-family: Lora;
+    font-style: italic;
+    margin: 5px 15px 10px 15px;
+}
+
+h3{
+    font-family: Montserrat;
+    padding: 5px;
+    margin: 0px 5px 0px 10px;
+}
+
+ul{
+    font-family: Hind Madurai;
+}
+
+.listaFirstChild :first-child{
+    font-family: Lora;
+    font-style: italic;
+    background-color: #C8ADC0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.listaLastChild :last-child{
+    font-family: Lora;
+    font-style: italic;
+    background-color: #C8ADC0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.listaNthChild :nth-child(2){
+    font-family: Lora;
+    font-style: italic;
+    background-color: #C8ADC0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.ejemploNthChild2 :nth-child(2n){
+    font-family: Lora;
+    font-style: italic;
+    background-color: #C8ADC0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.ejemploNthOfType :nth-of-type(2){
+    font-family: Lora;
+    font-style: italic;
+    background-color: #C8ADC0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.ejemploLink:visited{
+    font-family: Lora;
+    font-style: italic;
+    background-color: #C8ADC0;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+input{
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+input:checked{
+    background-color: #15e978;
+}
+
+input:invalid{
+    background-color: #ed2506;
+}
+
+input:valid{
+    background-color: #15e978;
+}
+
+/*Estilos footer*/
+footer{
+    background-color: #C8ADC0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer > a{
+    margin: 0;
+    padding: 10px;
+    background-color: #C8ADC0;
+}
+
+footer > div{
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+}

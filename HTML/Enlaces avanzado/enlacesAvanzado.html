@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Enlaces avanzados HTML</title>
+</head>
+<body>
+    <h1>Enlaces avanzados HTML</h1>
+
+    <h2>Enlace a otros elementos de la página</h2>
+    <p>Se hace asignándole un id al elemento de la página  al que queremos que nos dirija el link, luego en el href de la etiqueta a se pone el signo # seguido del id</p>
+    <div>
+        <a href="#linkVolver">Final de la pagina (link de volver)</a>
+    </div> 
+
+    <h2>Enlace de descarga</h2>
+    <p>Para esto se pone en href de la etiqueta a, el archivo que se desea descargar y además se le pone al atributo download</p>
+    <div>
+        <a download href="Archivo.txt">Link que descarga un txt</a>
+    </div>
+
+    <h2>Enlaces a páginas desconocidas</h2>
+    <p>Para esto hay que tener en cuenta el parámetro rel de la etiqueta a, allí vamos a poder establecer que puede hacer la página destino del link.</p>
+    <ul>
+        <li>Con el valor <span>noopener</span>, se le quita a la página destino la capacidad de cambiarme la página de que tengo en la pestaña en la que estaba</li>
+        <li>Con <span>noreferer</span>, se quita la posibilidad de que la pagina destino pueda saber desde donde viene el usuario</li>
+        <li>Con <span>nofollow</span>, se evita que google indexe la página destino, es útil para posicionamiento de la pagina</li>
+    </ul>
+    <p>Se recomienda poner las tres cosas en este tipo de enlaces.</p>
+
+    <h2>Enlaces para enviar correos y hacer llamadas</h2>
+    <p>Para mandar correo se pone en al atributo href el valor mailto: seguido de la dirección de correo  y para llamar se pone tel: seguido del número al que se desea llamar</p>
+    <div>
+        <a href="mailto:pablomastername@gmail.com">Enlace para enviar correo</a>
+    </div>
+    <div>
+        <a href="tel:+573224078519">Enlace para hacer llamadas</a>
+    </div>
+    
+    <div>
+        <a id="linkVolver" href="../enlaces.html">Volver</a>
+    </div>
+</body>
+</html>

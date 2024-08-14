@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Cascada y especificidad</title>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <nav>
+            <h1>Cascada y Especificidad</h1>
+            <a href="#especificidad">Escpecificidad</a>
+            <a href="#jerarquia">Jerarquía</a>
+        </nav>
+    </header>
+
+    <!--Contenido de la página-->
+    <main>
+        <!--Sección especificidad-->
+        <section id="especificidad">
+            <h2>Especificidad</h2>
+            <p>La esepecificidad es la importancia que se le da a cada forma de aplicar estilos, todo esto para resolver conflictos en aquellos escenarios en los que se le esté asignando diferentes estilos de diferentes formas a un mismo elemento de HTML. Existen tres tipos de especificidad:</p>
+
+            <h3>Orden</h3>
+            <p>Este es el escenario en el que se tienen estilos (con selección por etiqueta) de la misma importancia sobre un mismo elemento. Se presenta una especificidad de (0,0,1) y en este caso el estilo que se aplica es el último que se haya especificado</p>
+            <div>
+                div ejemplo
+            </div>
+
+            <h3>Selección por clase</h3>
+            <p>Este presenta un nivel de especificidad (0,1,0) es decir tiene mas importancia que el anterior</p>
+            <div class="ejemplo">
+                div ejemplo
+            </div>
+
+            <h3>Selección por id</h3>
+            <p>Este tiene un nivel de especificidad de (1,0,0)</p>
+            <div class="ejemplo" id="ejemploID">
+                div ejemplo
+            </div>
+
+            <p>Combinando las selecciones, se obtienen especificdades mayores, por ejemplo si selecciona por clase y por id entonces se obtiene una especificidad de (1,1,0)</p>
+        </section>
+
+        <!--Sección jerarquía de la cascada-->
+        <section id="jerarquia">
+            <h2>Jerarquía de estilos</h2>
+            <p>La jerarqquía de las formas de aplicar estilos permiten definir el comportamiento de la cascada de los estilos. Se presenta la siguiente lista ordenada de tal forma que los últimos items son los mas importantes, es decir estos sobrescriben los estilos que se hayan aplicado de las formas superiores:</p>
+            <ul>
+                <li>Estilos por defectoi del navegador</li>
+                <li>Personalización del navegador del usuario</li>
+                <li>Estilos de la hoja de estilos teniendo en cuenta las especificidades</li>
+                <li>Etiqueta style</li>
+                <li>Atributo style</li>
+                <li>! important: Este es un valor que se agrega en la hoja de estilos a la propiedad que se desee</li>
+            </ul>
+
+            <div class="ejemplo" id="ejemploID">
+                div ejemplo !important, descomentar la línea en la hoja de estilos para ver 
+            </div>
+        </section>
+    </main>
+
+    <!--Pie de página-->
+    <footer>
+        <a href="../../HTML/enlaces.html">Volver</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box sizing HTML</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <h1>Box Sizing</h1>
+
+        <p>Consiste en darle un tamaño fijo a una caja con el fin de que independientemente si agrego mas padding, border o content, esta ajustara estos parametros para que el tamaño de la caja siempre sea el mismo</p>
+
+        <h2>Content box</h2>
+        <p>Consiste en establecer un tamaño fijo para la caja del contenido, sin tener en cuenta el padding y el border, es decir que siempre que agregue alguna de las dos ultimas el tamaño de la caja crecera, pero si agrega mas contenido esto no aumentara</p>
+        <h3>Div sin agregar padding ni border</h3>
+        <div class="contentBorderUno"><p>Contenido</p></div>
+        <h3>Div despues de agregar padding y border</h3>
+        <div class="contentBorderDos"><p>Contenido</p></div>
+
+        <h2>Border box</h2>
+        <p>Parta este caso, si se tendra en cuenta el el padding y el margin ademas del contenido, es decir cada ves que el alguno de estos o el contenido cambie, el navegador acomodara todo para que el tamaño de la caja no crezca</p>
+        <p>El tamaño por default es de 100px por 100px</p>
+        <h3>Div sin agregar border box sin padding y border</h3>
+        <div class="box borderBoxUno"><p>Contenido</p></div>
+        <h3>Div con border box con padding 10px y border 5px</h3>
+        <div class="box borderBoxDos"><p>Contenido</p></div>
+
+        <a href="../../HTML/enlaces.html">Volver</a>
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Overflow</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Overflow CSS</h1>
+    </header>
+
+    <main class="cuerpo">
+        <!--Sección visible-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Visible</h2>
+
+            <p class="seccion__parrafo">Es el valor por defecto de la propiedad overflow, lo que hace que el contenido que desborda a su contenedor se pueda ver.</p>
+
+            <div class="seccion__ejemplo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!
+            </div>
+        </section>
+
+        <!--Sección hidden-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Hidden</h2>
+
+            <p class="seccion__parrafo">Este valor hace que el contenido que desborda el contenedor no sea visible.</p>
+
+            <div class="seccion__ejemplo ejemplo--hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!
+            </div>
+        </section>
+
+        <!--Sección scroll-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Scroll</h2>
+
+            <p class="seccion__parrafo">Valor quer agrega barras de scroll horizontales y verticales para poder ver todo el contenido, las barras se agragan incluso cuando no se presenta desbordamiento.</p>
+
+            <div class="seccion__ejemplo ejmplo--scroll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!
+            </div>
+        </section>
+
+        <!--Sección overflow-x-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Overflow-x</h2>
+
+            <p class="seccion__parrafo">Propiedad que permite agregar características como las anteriormente explicadas, solamente en el eje x, colocandole los respectivos valores.</p>
+
+            <div class="seccion__ejemplo ejemplo--overflowX">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!
+            </div>
+        </section>
+
+        <!--Sección overflow-y-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Overflow-y</h2>
+
+            <p class="seccion__parrafo">Propiedad que permite agregar características como las anteriormente explicadas, solamente en el eje y, colocandole los respectivos valores.</p>
+
+            <div class="seccion__ejemplo ejemplo--overflowY">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates! 
+            </div>
+        </section>
+
+        <!--Sección auto-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Auto</h2>
+
+            <p class="seccion__parrafo">Este valor hace que se agregue scroll únicamente cuando es necesario y en el eje que es necesario.</p>
+
+            <div class="seccion__ejemplo ejemplo--auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!
+            </div>
+        </section>
+
+        <!--Sección clip-->
+        <section class="seccion">
+            <h2 class="seccion__titulo">Clip</h2>
+
+            <p class="seccion__parrafo">Este valor tiene una función parecida a hidden, la diferencia radica en que con este valor, no se dejará espacion para un scroll.</p>
+
+            <div class="seccion__ejemplo ejemplo--clip">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti odio quos exercitationem libero nesciunt hic accusamus similique porro ullam iure vero minima totam, quod, eum quasi animi explicabo voluptates!
+            </div>
+        </section>
+    </main>
+
+    <footer class="pieDePagina">
+        <a href="../Trancisiones/trancisiones.html" class="enlace" title="Página anterior">
+            <img src="../../Iconos/back.png" class="enlace__icono">
+        </a>
+
+        <a href="https://www.flaticon.com/" target="_blank" class="enlace" title="Íconos">
+            <img src="../../Iconos/flaticon.png" class="enlace__icono">
+        </a>
+
+        <a href="../../HTML/enlaces.html" class="enlace" title="Menú principal">
+            <img src="../../Iconos/home.png" class="enlace__icono">
+        </a>
+        
+        <a href="https://youtu.be/ELSm-G201Ls?list=RDCMUCtoo4_P6ilCj7jwa4FmA5lQ" target="_blank" class="enlace" title="Fuente">
+            <img src="../../Iconos/youtube.png" class="enlace__icono">
+        </a>
+
+        <a href="../Flujo de texto/flujoTexto.html" class="enlace" title="Página siguiente">
+            <img src="../../Iconos/back (1).png" class="enlace__icono">
+        </a>
+    </footer>
+</body>
+</html>

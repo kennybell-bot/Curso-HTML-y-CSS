@@ -1,0 +1,90 @@
+body{
+    background-color: #3E6259;
+}
+
+/*Estilos header*/
+header{
+    background-color: #212922;
+    border: solid 3px #AEF6C7;
+    text-align: center;
+    font-family: Montserrat;
+    color: #AEF6C7;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/*Estilos del main*/
+main{
+    background-color: #212922;
+    border: solid 3px #AEF6C7;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main > p{
+    color:#AEF6C7;
+}
+
+/*Estilso secciones*/
+section{
+    background-color: #294936;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 3px #AEF6C7;
+}
+
+h2{
+    font-family: Montserrat;
+}
+
+.parrafoNormal{
+    font-family: Hind Madurai;
+    margin-left: 1%;
+}
+
+div{
+    font-family: Lora;
+    font-style: italic;
+}
+
+.parrafoEjemploInherit{
+    font-family: inherit;
+    font-style: inherit;
+    margin-left: 2%;
+}
+
+.parrafoEjemploInitial{
+    font-family: initial;
+    font-style: initial;
+    margin-left: 2%;
+}
+
+.parrafoEjemploUnset{
+    font-family: unset;
+    font-style: unset;
+    margin-left: 2%;
+}
+
+.parrafoEjemploRevert{
+    font-family: revert;
+    font-style: revert;
+    margin-left: 2%;
+}
+
+/*Estilos footer*/
+footer{
+    background-color: #212922;
+    border: solid 3px #AEF6C7;
+    text-align: center;
+    font-family: Montserrat;
+    color: #AEF6C7;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+a{
+    font-family: Hind Madurai;
+    color: #AEF6C7;    
+}

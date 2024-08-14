@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    background-image: url(../../Iconos/fondo.jpg);
+}
+
+/*Estilos encabezado*/
+.encabezado{
+    text-align: center;
+    padding: 5px;
+    background:#3183ee;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 3px 10px #000;
+    margin-bottom: 15px;
+    z-index: 0;
+    transition-property: background;
+    transition-duration: 1s;
+    transition-delay: 1s;
+    z-index: 1;
+}
+
+.encabezado:hover{
+    background:#057df6d0;
+}
+
+.titulo{
+    font-family: Montserrat;
+    margin: 0;
+}
+
+/*Estilos Cuerpo*/
+.cuerpo{
+    margin: 70px 10px 70px 10px;
+    position: relative;
+    width: 99%;
+    height: 100%;
+}
+
+.seccion__titulo{
+    font-family: Montserrat;
+}
+
+.seccion__parrafo{
+    font-family: Hind Madurai;
+}
+
+.seccion___ejemplo{
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.seccion___ejemplo:hover{
+    box-shadow: 0px 0px 5px #000000;
+}
+
+.seccion__articulo{
+    margin: 5px;
+}
+
+.articulo__titulo{
+    font-family: Montserrat;
+}
+
+.boton{
+    font-family: Hind Madurai;
+}
+
+.objeto{
+    width: 19px;
+    height: 19px;
+    background-color: #3183ee;
+    display: inline-block;
+}
+
+.objeto--ease{
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+.boton--ease:focus + .objeto--ease{
+    left: 1000px;
+}
+
+.objeto--easein{
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+.boton--easein:focus + .objeto--easein{
+    left: 1000px;
+}
+
+.objeto--easeout{
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+}
+
+.boton--easeout:focus + .objeto--easeout{
+    left: 1000px;
+}
+
+.objeto--easeinout{
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out 
+}
+
+.boton--easeinout:focus + .objeto--easeinout{
+    left: 1000px;
+}
+
+.objeto--cubicBezier{
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(.64,-0.03,.16,1); 
+}
+
+.boton--cubicBezier:focus + .objeto--cubicBezier{
+    left: 1000px;
+}
+
+/*Estilo pie de página*/
+.enlace{
+    display: inline;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.enlace__icono{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: height,width 0.5s;
+    transition-timing-function: 0.5s;
+}
+
+.enlace__icono:hover{
+    width: 50px;
+    height: 50px;
+}
+
+.pieDePagina{
+    background: transparent;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition-property: background;
+    transition-duration: 1s;
+}
+
+.pieDePagina:hover{
+    background:#6f6a6a90;
+}

@@ -1,0 +1,142 @@
+body{
+    background-image: url(../../Iconos/fondo.jpg);
+    margin: 0;
+}
+
+/*Estilos encabezado*/
+.encabezado{
+    background: linear-gradient(#fff,#c8c1c1);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    border-bottom: solid 3px #01b8fa;
+    z-index: 1;
+}
+
+.encabezado__titulo{
+    color: #01b8fa;
+    font-family: Montserrat;
+    text-align: center;
+}
+
+/*Estilos del cuerpo*/
+
+.cuerpo{
+    margin: 83px 0px 83px 0px;
+}
+
+.cuerpo__seccion__titulo{
+    font-family: Montserrat;
+}
+
+.cuerpo__seccion__parrafo{
+    font-family: Hind Madurai;
+}
+
+.cuerpo__seccion__articulo{
+    margin: 10px;
+}
+
+.cuerpo__seccion__articulo__titulo{
+    font-family: Montserrat;
+}
+
+.cuerpo__seccion__articulo__parrafo{
+    font-family: Hind Madurai;
+}
+
+.cuerpo__seccion__articulo__codigo{
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #000;
+    margin-bottom: 10px;
+}
+
+.cuerpo__seccion__articulo__codigo:hover{
+    box-shadow: 0px 0px 5px #01b8fa;
+}
+
+.cuerpo__seccion__articulo__ejemplo{
+    font-family: Hind Madurai;
+    align-self: center;
+    width: 50%;
+    margin: auto;
+    border: solid 3px #5a5e5f;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.ejemplo--nowrap{
+    white-space: nowrap;
+}
+
+.ejemplo--pre{
+    white-space: pre;
+}
+
+.ejemplo--prewrap{
+    white-space: pre-wrap;
+}
+
+.ejemplo--ellipsis{
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis
+}
+
+.ejemplo--breakall{
+    word-break: break-all;
+}
+
+.ejemplo--keepall{
+    word-break: keep-all;
+}
+
+.ejemplo--autophrase{
+    word-break: auto-phrase;
+}
+
+.ejemplo--breakWord{
+    word-wrap: break-word;
+}
+
+.ejemplo--anywhere{
+    word-wrap: anywhere;
+}
+
+.ejemplo--balance{
+    text-wrap: balance;
+}
+
+.ejemplo--pretty{
+    text-wrap: pretty;
+}
+
+/*Estilos pie de página*/
+
+.pieDePagina{
+    background: linear-gradient(#01b8fa,#016d95);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    text-align: center;
+}
+
+.pieDePagina__enlace__icono{
+    position: relative;
+    top: 10px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 4px;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.pieDePagina__enlace__icono:hover{
+    transform: scale(1.4);
+}
