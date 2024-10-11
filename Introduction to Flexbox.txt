@@ -1,0 +1,172 @@
+Introduction to Flexbox
+	-Explanation
+
+	-Axis
+
+		-Main axis
+
+			-explanation
+
+			-row
+
+				-explanation
+				-code
+				-example
+
+			-row-reverse
+
+				-explanation
+				-code
+				-example
+
+			-column
+
+				-explanation
+				-code
+				-example
+
+			-column-reverse
+
+				-explanation
+				-code
+				-example
+
+		-Cross Axis
+
+			-explanation
+
+	-Begin and finish line
+
+		-Explanation
+
+	-Flex container
+
+		-Explanation
+
+		-Change flex-direction
+
+			-Explanation
+			-Code
+			-Example
+
+	-Multi-line flex container with flex-wrap
+
+		-Explanation
+		-Code
+		-Example
+
+	-Flex-flow abbreviation
+
+		-Explanation
+		-Code
+		-Example
+
+	-Flex items applied properties
+
+		-Explanation
+		
+		-flex-grow
+
+			-Explanation
+			-Code
+			-Example
+
+		-Flex shrink
+
+			-Explanation
+			-Code
+			-Example
+
+		-Flex basis
+
+			-Explanation
+			-Code
+			-Example
+
+		-Abbreviated properties to flex values
+
+			-Explanation
+			-Code
+			-Example
+
+			-Default values
+
+				-flex: initial
+		
+					-code
+					-example
+
+				-flex: auto
+
+					-code
+					-example
+
+				-flex: none
+
+					-code
+					-example
+
+				-flex: <positive-number>
+
+					-code
+					-example
+
+	-Align, justify and space distribution between items
+
+		-Align-items
+
+			-Explanation
+			
+			-Stretch
+
+				-code
+				-example
+
+			-flex-start
+
+				-code
+				-example
+
+			-flex-end
+
+				-code
+				-example
+
+			-center
+
+				-code
+				-example
+
+		-Justify content
+
+			-Explanation
+
+			-space-evenly
+
+				-code
+				-example
+
+			-flex-start
+
+				-code
+				-example
+
+			-flex-end
+
+				-code
+				-example
+
+			-center
+
+				-code
+				-example
+
+			-space-around
+
+				-code
+				-example
+
+			-space-between
+
+				-code
+				-example

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Introducción Flexbox</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="titulo">Introducción Flexbox</h1>
+    </header>
+
+    <main class="contenido">
+
+        <p class="parrafo">Flex box es un modelo unidimensional de layout que sirve pra administrar los espacios entre los elemento, todo esto con los conceptos que lo componen y que se encuentran explicados a continuación:</p>
+
+        <!--Seccion ejes principal y secundario-->
+        <section class="seccion">
+
+            <!--Articulo Eje Principal-->
+            <article class="articulo arituclo--general">
+
+                <h2 class="titulo">Eje Principal</h2>
+
+                <p class="parrafo">El eje principal es el punto de referencia que toma flex box para disponer los elementos. Este eje se puede disponer de manera vertica u horizontal y puede estar orientado hacia la derecha o hacia la izquierda.</p>
+
+                <article class="articulo articulo--especifico">
+
+                    <h3 class="titulo">Row</h3>
+
+                    <p class="parrafo">Con este valor en el atributo flex-direction del contenedor, los elementos en su interior se dispondrán en fila sobre el eje principal y en la dirección determinada por el lenguaje.</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenedor{
+                                <blockquote>
+                                    flex-direction: row;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contendor--ejemploRow">
+                        <div class="contenedor contenedor--objeto">Objeto 1</div>
+                        <div class="contenedor contenedor--objeto">Objeto 2</div>
+                        <div class="contenedor contenedor--objeto">Objeto 3</div>
+                    </div>
+
+                </article>
+
+                <article class="articulo articulo--especifico">
+
+                    <h3 class="titulo">Row-reverse</h3>
+
+                    <p class="parrafo">Con este valor en la propieadad flex-dirction los elementos del contenedor se dispondran en fila pero en direccion contraria a la predeterminada.</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenedor{
+                                <blockquote>
+                                    flex-direction: row-reverse;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploRowReverse">
+                        <div class="contenedor contenedor--objeto">Objeto 1</div>
+                        <div class="contenedor contenedor--objeto">Objeto 2</div>
+                        <div class="contenedor contenedor--objeto">Objeto 3</div>
+                    </div>
+
+                </article>
+
+                <article class="articulo articulo--especifico">
+
+                    <h3 class="titulo">Column</h3>
+
+                    <p class="parrafo">Con este valor en la propieadad flex-direction los elementos se dispondrán en columna y el eje principal será vertical.</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenedor{
+                                <blockquote>
+                                    flex-direction: column;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploColumn">
+                        <div class="contendor contenedor--objeto">Objeto 1</div>
+                        <div class="contendor contenedor--objeto">Objeto 2</div>
+                        <div class="contendor contenedor--objeto">Objeto 3</div>
+                    </div>
+
+                </article>
+
+                <article class="articulo aticulo--especifico">
+
+                    <h3 class="titulo">Column reverse</h3>
+
+                    <p class="parrafo">Con este valor los elementos se dispondrán en columna pero en la dirección contraria</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenedor{
+                                <blockquote>
+                                    flex-direction: column-reverse;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploColumnReverse">
+                        <div class="contendor contenedor--objeto">Objeto 1</div>
+                        <div class="contendor contenedor--objeto">Objeto 2</div>
+                        <div class="contendor contenedor--objeto">Objeto 3</div>
+                    </div>
+
+                </article>
+
+            </article>
+
+            <!--Articulo Eje Cruzado-->
+            <article class="articulo articulo--general">
+
+                <h2 class="titulo">Eje Cruzado</h2>
+
+                <p class="parrafo">El eje cruzado siempre será perpendicular al eje principal, si este último presenta un valor de la propiedad flex-direction de column o column-reverse, en ese caso el eje cruzado será horizontal. Por otro lado si tiene valores row o row-reverse el eje cruzado será dispuesto de forma vertical</p>
+
+            </article>
+
+        </section>
+
+        <!--Sección lúneas de inicio y fin-->
+        <section class="seccion">
+
+            <h2 class="titulo">Líneas de inicio y fin</h2>
+
+            <p class="parrafo">Las líneas de inicio y fin, ayudan a direccionar los elementos del contenedor felx dependiendo del modo de escritura del idioma en el que se esté trabajando la página.</p>
+
+        </section>
+
+        <!--Contenedor flex-->
+        <section class="seccion">
+
+            <h2 class="titulo">Contenedor flex</h2>
+
+            <p class="parrafo">Al poner flex como valor de la propiedad display se establece que los items que contenga el elemento se comportaran como flex items, lo que uimplica que serán dispuestos a los largo del eje principal, cecerán para abarcar la longitud del eje cruzado, podrán estar dispuestos de manera horizontal o vertical dependiendo del valor asignado a la propiedad felx-direction. La diraccion en la que se encuentran los felx itemms estara determinada por las líneas de inicio y fin cuya localización esta definida por el valor de la propiedad flex direction.</p>
+
+        </section>
+
+        <!--sección flex-wrap-->
+        <section class="seccion">
+
+            <h2 class="titulo">MUltilínea flex box</h2>
+
+            <p class="parrafo">En flex box se puede esablecer que cuando los flex items sobrepasen los límites de su contenedor, estos se repartan en varias líneas para que esto no suceda. Lo anterior se hace posible con la propiedad flexc-wrap, que tiene como valor por defecto nowrap para que los elementos se desborden, sin embargo con el valor wrap se logra que los elementos desbordados pasen a otra línea que será considerada otro contenedor flex.</p>
+
+            <div class="contenedor contenedor--codigo">
+                <code>
+                    contenedor{
+                        <blockquote>
+                            flex-wrap: wrap;
+                        </blockquote>
+                    }
+                </code>
+            </div>
+
+            <div class="contenedor contenedor--ejemplo contenedor--ejemploWrap">
+                <div class="contenedor contenedor--objeto conetenedor--objetoWrap">objeto 1</div>
+                <div class="contenedor contenedor--objeto conetenedor--objetoWrap">objeto 2</div>
+                <div class="contenedor contenedor--objeto conetenedor--objetoWrap">objeto 3</div>
+            </div>
+
+        </section>
+
+        <!--Secció abreviatura flex-flow-->
+        <section class="seccion">
+            <h2 class="titulo">Abreviatura flex-flow</h2>
+
+            <p class="parrafo">La abrevitura con la propiedad flex-flow consiste en que esta recibe los valores para las propiedades flex-direction y flex-wrap en ese orden.</p>
+
+            <div class="contenedor contenendor--ejemploAbreviatura">
+                <div class="contenedor contenedor--objeto">Objeto 1</div>
+                <div class="contenedor contenedor--objeto">Objeto 2</div>
+                <div class="contenedor contenedor--objeto">Objeto 3</div>
+            </div>
+        </section>
+
+        <!--Sección  propiedades de los items flex-->
+        <section class="seccion">
+
+            <h2 class="titulo">Propiedades de los items flex</h2>
+
+            <p class="parrafo">Las propiedades que se mencionan en este apartado son flex-basis, flex-shrink y flex grow. Con estas propiededades podemos modificar como el se hace dispocisión del espacio libre del contenedor(espacio que no ocupan los flex items dentro del contenedor flex).</p>
+
+            <article class="articulo">
+
+                <h3 class="titulo">flex-basis</h3>
+
+                <p class="parrafo">Con esta propiedad podemos darle un tamaño por defecto a un flex item</p>
+
+                <div class="contenedor contenedor--codigo">
+                    <code>
+                        flexItem{
+                            <blockquote>
+                                flex-basis: 100px;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+
+                <div class="contenedor contenedor--ejemploBasis">
+                    <div class="contenendor contenedor--objetoFlexBasis">Objeto 1</div>
+                    <div class="contenendor contenedor--objeto">Objeto 2</div>
+                    <div class="contenendor contenedor--objeto">Objeto 3</div>
+                </div>
+
+            </article>
+
+            <article class="articulo">
+
+                <h3 class="titulo">Flex grow</h3>
+
+                <p class="parrafo">Con esta propiedad se puede establecer la proporción con la que van a crecer lo elementos basado en el flex basis. Dandole un entero positivo a esta propiedad, se estaablece la porción del espacio disponible que el item tomará.</p>
+
+                <div class="contenedor contenedor--codigo">
+                    <code>
+                        flexItem{
+                            <blockquote>
+                                flex-grow: 2;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+
+                <div class="contenedor contenedor--ejemploGrow">
+                    <div class="contenedor contenedor--objetoGrow">Objeto 1</div>
+                    <div class="contenedor contenedor--objeto">Objeto 2</div>
+                </div>
+
+            </article>
+
+            <article class="articulo">
+
+                <h3 class="titulo">Flex Shrink</h3>
+
+                <p class="parrafo">Esta propiedad permite determinar el ritmo de encogimiento del flex item.</p>
+
+                <div class="contenedor contenedor--codigo">
+                    <code>
+                        flexItem{
+                            <blockquote>
+                                flex-shrink: 1;
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+
+                <div class="contenedor contenedor--ejemploShrink">
+                    <div class="contenedor contenedor--objetoShrink">Objeto 1</div>
+                    <div class="contenedor contenedor--objeto">Objeto 2</div>
+                </div>
+
+            </article>
+
+            <article class="articulo">
+
+                <h3 class="titulo">Abreviatura propiedades de los items flex</h3>
+
+                <p class="parrafo">Es muy común el uso de esta abreviatura ya que permite establecer valores para las propiedades flex-grow, flex-shrink y flex-basis en una sola línea y en ese mismo orden como valores de la propiedad flex en los estilos del flex-item.</p>
+                </p>
+
+                <div class="contenedor contenedor--codigo">
+                    <code>
+                        flexItem{
+                        <blockquote>flex: 1 1 auto;</blockquote>
+                        }
+                    </code>
+                </div>
+
+                <article class="articulo">
+                    <h3 class="titulo">Valores por defecto de la propiedad flex</h3>
+
+                    <p class="parrafo">Los valores por defecto son palabras clave que asignan valores en especifico a las propiedades flex-grow, flex-shrink y flex-basis de la propiedad flex. estos valores suelen ser valores que son útiles en gran cantidad de casos.</p>
+
+                    <!--AArticulo flex initial-->
+                    <article class="articulo">
+
+                        <h4 class="titulo">Initial</h4>
+
+                        <p class="parrafo">Con el valor initial se le da un valor de o a flex-grow para que los items no crezcan mas de auto que es el valor que se le asigna a flex-basis y finalmente se le asigna un valor de 1 a la propiedad flex-shrink para que los flex items se contraigan si es necesario.</p>
+
+                        <div class="contenedor contenedor--codigo">
+                            <code>
+                                flexItem{
+                                    <blockquote>flex: initial;</blockquote>
+                                }
+                            </code>
+                        </div>
+
+                        <div class="contenedor contenedor--ejemplo">
+                            <div class="contenedor contenedor--objeto">Objeto 1</div>
+                            <div class="contenedor contenedor--objeto">Objeto 2</div>
+                            <div class="contenedor contenedor--objeto">Objeto 3</div>
+                        </div>
+
+                    </article>
+
+                    <!--Articulo flex auto-->
+                    <article class="articulo">
+
+                        <h4 class="titulo">Auto</h4>
+
+                        <p class="parrafo">Este valor hace que la propiedad flex-grow adquiera un valor de 1 para que los items puedan crecer y llenar el contenedor, las demáa propiedades tienen los mismos valores que se les asigna con initial.</p>
+
+                        <div class="contenedor contenedor--codigo">
+                            <code>
+                                flexItem{
+                                <blockquote>flex: auto;</blockquote>
+                                }
+                            </code>
+                        </div>
+
+                        <div class="contenedor contenedor--ejemplo">
+                            <div class="contenedor contenedor--objeto">Objeto 1</div>
+                            <div class="contenedor contenedor--objeto">Objeto 2</div>
+                            <div class="contenedor contenedor--objeto">Objeto 3</div>
+                        </div>
+
+                    </article>
+
+                    <!--Articulo flex none-->
+                    <article class="articulo">
+
+                        <h4 class="titulo">None</h4>
+
+                        <p class="parrafo">Este valor hace que flex-grow y flex-shrink tomen un valor de 0, para que los flex items no puedan ni crecer ni encogerse, la propiedad flex-basis sigue teniendo el valor auto.</p>
+
+                        <div class="contenedor contenedor--codigo">
+                            <code>
+                                flexItem{
+                                    <blockquote>flex: none;</blockquote>
+                                }
+                            </code>
+                        </div>
+
+                        <div class="contenedor contenedor--ejemplo">
+                            <div class="contenedor contenedor--objeto">Objeto 1</div>
+                            <div class="contenedor contenedor--objeto">Objeto 2</div>
+                            <div class="contenedor contenedor--objeto">Objeto 3</div>
+                        </div>
+
+                    </article>
+
+
+                </article>
+                
+            </article>
+
+        </section>
+
+        <!--Seccion alinear y justificar-->
+        <section class="seccion">
+            <h2 class="titulo">Alinear y justificar flex items</h2>
+
+            <p class="parrafo">Los flex items pueden ser alineados y justificados a lo largo de los ejes principal y cruzado, así como tambiéncontamos con la posibilidad de manejar el espacio qwue hay entra cada uno de los flex items</p>
+
+            <!--Articulo align items-->
+            <article class="articulo">
+
+                <h3 class="titulo">Align Items</h3>
+
+                <p class="parrafo">Con la propiedad podremos alinear lo items sobre el eje cruzado es aplicada al contenedor flex y tiene los siguientes valores:</p>
+
+                <!--Artículo stretch-->
+                <article class="articulo">
+
+                    <h4 class="titulo">Stretch</h4>
+
+                    <p class="parrafo">Este es el valor por defecto de la propiedad, hace que todos los flex items tengan la altura del más alto.</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contendor{
+                            <blockquote>aign-items: stretch;</blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploStretcht">
+                        <div class="contenedor--objetoFlex">Objeto 1</div>
+                        <div class="contenedor--objetoFlex">Objeto 2</div>
+                        <div class="contenedor--objetoFlex">Objeto 3 con mas texto</div>
+                    </div>
+
+                </article>
+
+                <!--Artículo flex-start-->
+                <article class="articulo">
+
+                    <h4 class="titulo">Flex start</h4>
+
+                    <p class="parrafo">Con este valor todos los items se alinean al inicio de dle contenedor flex.</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenedor{
+                            <blockquote>align-items: flex-start;</blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploStart">
+                        <div class="contenedor--objetoStart">Objeto 1</div>
+                        <div class="contenedor--objetoStart">Objeto 2</div>
+                        <div class="contenedor--objetoStart">Objeto 3</div>
+                    </div>
+
+                </article>
+
+                <!--Artículo flex end-->
+                <article class="articulo">
+
+                    <h4 class="titulo">Flex end</h4>
+
+                    <p class="parrafo">Con este valor los items se alinean al final del contenedor flex</p>
+
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contendor{
+                            <blockquote>align-items: flex-end;</blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploEnd">
+                        <div class="contenedor contenedor--objeto">Objeto 1</div>
+                        <div class="contenedor contenedor--objeto">Objeto 2</div>
+                        <div class="contenedor contenedor--objeto">Objeto 3</div>
+                    </div>
+
+                </article>
+
+                <!--Artículo center-->
+                <article class="articulo">
+
+                    <h4 class="titulo">Center</h4>
+
+                    <p class="parrafo">Con este valor los felx items se alinean en el centro del contenedor flex.</p>
+                    
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenendor{
+                            <blockquote>align-items: center;</blockquote>
+                            }
+                        </code>
+                    </div>
+
+                    <div class="contenedor contenedor--ejemploCenter">
+                        <div class="contenedor--objeto">Objeto 1</div>
+                        <div class="contenedor--objeto">Objeto 2</div>
+                        <div class="contenedor--objeto">Objeto 3</div>
+                    </div>
+
+                </article>
+
+            </article>
+
+            <!--Articulo justify content-->
+            <article class="articulo">
+
+                <h3 class="titulo">Justify content</h3>
+
+                <p class="parrafo">Con justify content se alinean los flex items sobre el eje principal. Los valores flex-start, flex-end y center funcionan de manera parecida a como funcionan en la sección anterior. Además de lo anterior, la propiedad nos permite manipular el uso del espacio sobrante después de los flex items.</p>
+
+                <!--Artículo space evenly-->
+                <article class="articulo">
+
+                    <h4 class="titulo">Space evenly</h4>
+                    <p class="parrafo">Reparte el espacio entre elementos.</p>
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            contenedor{
+                            <blockquote>justify-content: space-evenly;</blockquote>
+                            }
+                        </code>
+                    </div>
+                    <div class="contenedor contenedor--ejemploEvenly">
+                        <div class="contenedor--objetoEvenly">Objeto 1</div>
+                        <div class="contenedor--objetoEvenly">Objeto 2</div>
+                        <div class="contenedor--objetoEvenly">Objeto 3</div>
+                    </div>
+                </article>
+                <article class="articulo">
+                    <h4 class="titulo"></h4>
+                    <p class="parrafo"></p>
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            <blockquote></blockquote>
+                        </code>
+                    </div>
+                    <div class="contenedor contenedor--ejemplo">
+                        <div class="contenedor contenedor--objeto"></div>
+                        <div class="contenedor contenedor--objeto"></div>
+                        <div class="contenedor contenedor--objeto"></div>
+                    </div>
+                </article>
+                <article class="articulo">
+                    <h4 class="titulo"></h4>
+                    <p class="parrafo"></p>
+                    <div class="contenedor contenedor--codigo">
+                        <code>
+                            <blockquote></blockquote>
+                        </code>
+                    </div>
+                    <div class="contenedor contenedor--ejemplo">
+                        <div class="contenedor contenedor--objeto">Objeto 1</div>
+                        <div class="contenedor contenedor--objeto">Objeto 2</div>
+                        <div class="contenedor contenedor--objeto">Objeto 3</div>
+                    </div>
+                </article>
+
+        </section>
+
+    </main>
+
+    <footer class="pieDePagina">
+
+        <nav class="menu">
+
+            <a href="../Emmet/emmet.html" class="link" title="Página anterior">
+                <img src="../../Iconos/back.png" class="link__icono">
+            </a>
+
+            <a href="https://www.flaticon.com/" class="link" title="íconos" target="_blank">
+                <img src="../../Iconos/flaticon.png" class="link__icono">
+            </a>
+
+            <a href="../../HTML/enlaces.html" class="link" title="Menú principal">
+                <img src="../../Iconos/home.png" class="link__icono">
+            </a>
+
+            <a href="https://youtu.be/ELSm-G201Ls" class="link" title="fuente" target="_blank">
+                <img src="../../Iconos/youtube.png" class="link__icono">
+            </a>
+            <a href="../Introduccion Flexbox/introduccionFelxBox.html" class="link" title="Página siguiente">
+                <img src="../../Iconos/back (1).png" class="link__icono">
+            </a>
+
+        </nav>
+
+    </footer>
+</body>
+</html>
