@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsivedesign.css">
+    <link rel="icon" href="../../Iconos/iconoCSS.png">
+    <!--Concexion fuente Montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion fuente Hind Madurai-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Conexion a la fuente lora-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Responsive Design</title>
+</head>
+<body>
+    <header>
+        <h1>Responsive design</h1>
+    </header>
+
+    <div class="main-container">
+        <aside>
+            <a href="#seccion1">Why responsive design?</a>
+            <a href="#seccion2">Mobile web design</a>
+            <a href="#seccion3">What is responsive design?</a>
+            <a href="#seccion4">Media queries</a>
+            <a href="#seccion5">Responsive technologies</a>
+            <a href="#seccion6">Responsive Media</a>
+            <a href="#seccion7">Responsive typography</a>
+        </aside>
+
+        <main>
+            <!--Why responsive? section-->
+            <section id="seccion1">
+                <h2>Why responsive?</h2>
+                <p>Mobile navigation has introduced new challenges in web design. Since the web pages could be visualized on mobile devices, visualize on a correct way our web, page gave origin to responsive design.</p>
+            </section>
+
+            <!--Mobile desing section-->
+            <section id="seccion2">
+                <h2>Mobile web design</h2>
+                <p>It's a trend born in base the mobile web navigation. Consist on design the web layout to mobile first and then make it to other devices. On mobile first there' i's the option to skip some web elements.</p>
+            </section>
+
+            <!--What is responsive design? section-->
+            <section id="seccion3">
+                <h2>What is responsive design?</h2>
+                <p>Responsive design objective is to make the web page layout adaptable to different devices, for exmaple the following image has the property max-width with the value 100% to don't lose its  size, even if its container grows mora than its width.</p>
+                <div class="image-container">
+                    <img src="images/image1.png" alt="Image 1" class="image1">
+                </div>
+            </section>
+
+            <!--Media queries section-->
+            <section id="seccion4">
+                <h2>Media queries</h2>
+                <p>CSS characteristics that prevent some styles from being applied depending on whether a condition is true or not. For responsive design, they are used to apply specific styles when the webpage is displayed on different devices. The point where a media query is inserted is called a breakpoint. For example, the following styles won't be applied until the conditions in parentheses are true. The word 'screen' indicates that the CSS rule is applied to the screen presentation (styles can be applied to print design with the word 'print').</p>
+                <div class="code-container">
+                    <code>
+                        @media screen and (min-width: 80rem) {
+                            <blockquote>
+                                .container {<br>
+                                    <blockquote>
+                                        margin: 1em 2em;
+                                    </blockquote>
+                                }
+                            </blockquote>
+                        }
+                    </code>
+                </div>
+            </section>
+
+            <!--Responsive thechnologies section-->
+            <section id="seccion5">
+                <h2>Responsive technologies</h2>
+                <p>To answer the responsive design problems, exist css flexible layouts such as:</p>
+                <article>
+                    <h3>Multicol</h3>
+                    <p>It Consist on display the content on columns that are specified in the column-count property. Aditionally its width with the column-width property. Those properties can be determinated with the shorthand columns.</p>
+                    <div class="image-container">
+                        <img src="images/multi-column-css.png" alt="Multicolums layout" class="imagen-multicolLayout">
+                    </div>
+                </article>
+                
+                <article>
+                    <h3>Flexbox</h3>
+                    <p>Flexbox is a flexible layout that provides an easy way to organize web page elements. Aditionally gives the posibility to rezise those elementso with the flex-grow and flex-shrink elements.</p>
+                    <div class="image-container">
+                        <img src="images/flex-boxLayout.png" alt="flexbox layout" class="imageFlexbox">
+                    </div>
+                </article>
+
+                <article>
+                    <h3>CSS grid</h3>
+                    <div class="image-container">
+                        <img src="images/gridCSS.jpg" alt="grid layout" class="imageGrid">
+                    </div>
+                </article>
+            </section>
+
+            <!--Respnsive section-->
+            <section id="seccion6">
+                <h2>Responsive media</h2>
+                <p>First section gave an example of respnsive media method, the property max-width with 100% as value, its a way to make sura that an image wont grow more than its nattural width. Other option is the use of img's atributes srcset and sizes. The first one allows define different versions of any image to be shown depending the screen size. The second one, allows to stablish the conditions to show an specific size images, also depending the screen size.</p>
+                <div class="code-container">
+                    <code>
+                        &lt;img srcset="./images/Golf-small.jpg 400w, ./images/golfgigant.jpg  2000w" alt="imagen" class="image-responsive" &gt;
+                    </code>
+                </div>
+                <div class="image-container">
+                    <img srcset="./images/Golf-small.jpg 400w, ./images/golfgigant.jpg  2000w" alt="imagen" class="image-responsive">
+                </div>
+                <p>Another option is using the picture and source tags with the media atribute. The idea is to provide some images to be displayed and browser wiull choose the correct based on a condition on the condition wich is contained on the media atribute.</p>
+                <div class="image-container">
+                    <picture>
+                        <source srcset="images/lamborgini-small.jpg" media="(max-width: 400px)">
+                        <source srcset="images/lambotginimedium.jpg".jpg" media="(max-width: 900px)">
+                        <img src="images/lambotginimedium.jpg" alt="">
+                    </picture>
+                </div>
+            </section>
+
+            <!--Responsive typography section-->
+            <section id="seccion7">
+                <h2>Responsive typography</h2>
+                <p>Responsive typography refers to changing font size depending the device where the website is performing.</p>
+                <p class="responsive-typography">Example</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <a href="../../HTML/enlaces.html" class="enlaces-footer">
+            <img src="../../Iconos/home.png" class="imagen-enlace-footer">
+        </a>
+    </footer>
+</body>
+</html>

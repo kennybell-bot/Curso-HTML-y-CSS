@@ -1,0 +1,134 @@
+html{
+    margin: 0;
+    background-image: url(../../Iconos/fondoNegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    margin: 10px 10px 10px 10px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    font-family: Hind Madurai;
+    flex-grow: 1;
+    padding-right: 25px;
+}
+
+main{
+    flex-grow: 1;
+}
+
+a{
+    text-decoration: none;
+    color: #5c5e5e;
+    margin: 10px;
+}
+
+a:hover{
+    color: #fff;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p{
+    font-family: Hind Madurai;
+    color: #fff;
+}
+
+h1{
+    font-family: Montserrat;
+    text-align: center;
+    margin: 0;
+    color: #06a3d7;
+}
+
+h2,h3{
+    font-family: Montserrat;
+    color: #06a3d7;
+}
+
+h2{
+    border-bottom: 1px solid #06a3d7;
+}
+
+.code-container{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    width: fit-content;
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #06a3d7;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.image1{
+    max-width: 100%;
+}
+
+.imagen-multicolLayout, .imageFlexbox, .imageGrid, .image-responsive{
+    max-width: 100%;
+}
+
+.responsive-typography{
+    font-size: 24px;
+}
+
+.imagen-enlace-footer{
+    padding: 3px;
+    border-radius: 4px;
+    transition-property: transform, background-color;
+    transition-duration: 1s;
+}
+
+.imagen-enlace-footer:hover{
+    transform: scale(1.5);
+    background-color: #5c5e5e;
+}
+
+@media screen and (max-width: 600px){
+
+    .main-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    aside{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+
+    .image1{
+        width: 85px
+    }
+
+    .imagen-multicolLayout, .imageFlexbox, .imageGrid, .image-responsive{
+        width: 80%;
+    }
+
+    .responsive-typography{
+        font-size: 12px;
+    }
+
+}
