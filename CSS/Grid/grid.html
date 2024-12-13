@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Concexión Fira Sans-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Irish+Grover&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <!--Fuente volkorn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Copse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Irish+Grover&family=Sixtyfour+Convergence&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!--Fuente ABeeZee-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Copse&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Irish+Grover&family=Sixtyfour+Convergence&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Grid CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Grid layout CSS</h1>
+    </header>
+
+    <div class="main-container">
+        
+        <!--Sidebar menu-->
+        <aside>
+            <nav>
+                <a href="#section1">What is grid layout?</a>
+                <a href="#section2">Creating your grid in CSS</a>
+                <a href="#section3">Line base placement</a>
+                <a href="#section4">Grid template areas</a>
+                <a href="">Nesting grids and subgrid</a>
+                <a href="">Grid frameworks</a>
+            </nav>
+        </aside>
+
+        <!--Main content-->
+        <main>
+            <!--Grid layout definition section -->
+            <section id="section1">
+                <h2>What is grid?</h2>
+
+                <p>Grid layout is a way to order elements in screen. It´s a line pattern wich generates a grup of columns and rows, aditionally it can be posible to specify the space between cells usig the gap property.</p>
+            </section>
+
+            <!--Creating grid section-->
+            <section id="section2">
+                <h2>Creating grid</h2>
+
+                <!--Defining grid article-->
+                <article>
+                    <h3>Defining grid</h3>
+                    <p>To definea grid layout, we need to identify the container element and on its CSS rule define the property display with the value grid. Then we can create the grid columns using the property grid-template-columns and as value we put the each column value.</p>
+                    <div class="conceptDemostration">
+                        <div class="container code">
+                            <code>
+                                .container{
+                                    <blockquote>
+                                        <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                        <span class="property">grid-template-columns</span>: <span class="value">100px 100px</span>;
+                                    </blockquote>
+                                }
+                            </code>
+                        </div>
+                        <div class="container example example--1">
+                            <div>1</div>
+                            <div>2</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--fr units article-->
+                <article>
+                    <h3>fr units</h3>
+                    <p>This units has the function to distribute the avaliable space among the columns or rows. Each fr unit represents one unit of the avaliable space.</p>
+                    <div class="conceptDemostration">
+                        <div class="container code">
+                            <code>
+                                .container{
+                                    <blockquote>
+                                    <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                    <span class="property">grid-template-columns</span>: <span class="value">1fr 2fr</span>;
+                                    </blockquote>
+                                }            
+                            </code>
+                        </div>
+                        <div class="container example example--2">
+                            <div>1</div>
+                            <div>2</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Repeating track listing article-->
+                <article>
+                    <h3>Repeating tracks listing</h3>
+                    <p>Indicate the number of columns or rows as value becomes hard when they too many, for this purpose it is used the CSS function repeat(). The function recieves two parameters, first the number of times we are going to repeat the second parameter, in this scenary the size of the column or row.</p>
+                    <div class="conceptDemostration">
+                        <div class="container code">
+                            <code>
+                                .container{
+                                    <blockquote>
+                                        <span class="property">display</span>: <span class="value"> grid</span>;<br>
+                                        <span class="property">grid-template-columns</span>: <span class="value"> repeat(2 , 1fr)</span>;<br>
+                                        <span class="property">gap</span>: <span class="value">5px</span>;
+                                    </blockquote>
+                                }           
+                            </code>
+                        </div>
+                        <div class="container example example--3">
+                            <div>1</div>
+                            <div>2</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Implicit and explicit grid-->
+                <article>
+                    <h3>Implicit and explicit grid</h3>
+                    <p>The diference between implicit and explicit grid come in that the first one is defined by the user using the prpoerties and tools. On the other hand, implicit grid refers to the definition of new rows when the content overflows the grid. Those new rows or columns are autosized, however using the grid-auto-columns or grid-auto-rows, we can configure the new tracks size.</p>
+                    <div class="conceptDemostration">
+                        <div class="container code">
+                            <code>
+                                .container{
+                                    <blockquote>
+                                        <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                        <span class="property">grid-template-columns</span>: <span class="value">repeat(3 , 1fr)</span>;<br>
+                                        <span class="property">gap</span>: <span class="value">5px</span>;
+                                    </blockquote>
+                                }           
+                            </code>
+                        </div>
+                        <div class="container example example--4 ">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>                        
+                    </div>
+                </article>
+
+                <!--Minmax function article-->
+                <article>
+                    <h3>The minmax() function</h3>
+                    <p>This CSS function avoids to define a minimun and maximun size for a track. It makes dinamic for changes on the content.</p>
+                    <div class="conceptDemostration">
+                        <div class="container code">
+                            <code>
+                                .container{
+                                    <blockquote>
+                                        <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                        <span class="property">grid-template-columns</span>: <span class="value">repeat(2, 1fr)</span>;<br>
+                                        <span class="property">gap</span>: <span class="value">5px</span>;<br>
+                                        <span class="property">grid-auto-rows</span>: <span class="value">minmax(100px, auto)</span>;<br>
+                                    </blockquote>
+                                }                                           
+                            </code>
+                        </div>
+                        <div class="container example example--6">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>
+                    </div>
+                </article>
+
+                <!--As many columns as will fit article-->
+                <article>
+                    <h3>As many columns as will fit</h3>
+                    <p>To achieve generate the number of columns that the container size allows, we use the CSS functions repeat() and minmax(). As first repeat function parameter put the value auto-fit, it provides the characteristic to generate as many columns as it is posible. For the next parameter, we use the minmax() function, its parameters are going to be the minimum column size and then 1fr to distribute space.</p>
+                    <div class="conceptDemostration">
+                        <div class="container code">
+                            <code>
+                                .container{
+                                    <blockquote>
+                                        <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                        <span class="property">grid-template-columns</span>: <span class="value">repeat(2, 1fr)</span>;<br>
+                                        <span class="property">gap</span>: <span class="value">5px</span>;<br>
+                                        <span class="property">grid-auto-rows</span>: <span class="value">minmax(100px, auto)</span>;<br>
+                                        <span class="property">grid-template-columns</span>: <span class="value">repeat(auto-fit, minmax(200px, 1fr))</span>;
+                                    </blockquote>
+                                }
+                            </code>
+                        </div>
+                        <div class="container example example--5">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!--Line base placement section-->
+            <section id="section3">
+                <h2>Line base placement</h2>
+                <p>The grid lines are numbered on the text direction. Based on those lines, we can define the any object beginning and end line. For this purpose, we use the properties grid-column-start, grid-column-end, grid-row-start and grid-row-end. On the other hand, we have a shortcut for each track, grid-column and grid-row. To indicate the element beginning and end, we put them as value with a / between them.</p>
+                <div class="conceptDemostration">
+                    <div class="container code">
+                        <code>
+                            .gridItem{
+                                <blockquote>
+                                    <span class="property">grid-column</span>: <span class="value">1/3</span>;<br>
+                                    <span class="property">grid-row</span>: <span class="value">1</span>;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <div class="container example example--7">
+                        <div class="grid-item">1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>?
+                    </div>
+                </div>
+            </section>
+
+            <!--Grid template areas section-->
+            <section id="section4">
+                <h2>Grid template areas</h2>
+                <p>The grid template areas its another way to display the elements. It consists on set up a template using words and then asign the word to element that is going to be on that grid area. However there are some rules to keep in mind to use this type of position.</p>
+                <ol>
+                    <li>Every must be filled, it means every cell in the template must have a word.</li>
+                    <li>To span an element just repeat the word the number of cells that it ocupes.</li>
+                    <li>To indicate that a cell is going to be empty it is going to ber marked with a period (.)</li>
+                    <li>This just avoids rectangular grid areas.</li>
+                    <li>The areas can´t be repeated at different parts.</li>
+                </ol>
+                <div class="conceptDemostration">
+                    <div class="container code">
+                        <code>
+                            .container {
+                                <blockquote>
+                                    <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                    <span class="property">grid-template-areas</span>:<br>
+                                    <blockquote>
+                                        <span class="value">
+                                            "header header"<br>
+                                            "sidebar content"<br>
+                                            "footer footer"<br>
+                                        </span>;
+                                    </blockquote>
+                                    <span class="property">grid-template-columns</span>: <span class="value"> 1fr 3fr</span>;<br>
+                                    <span class="property">gap</span>: <span class="value">20px</span>;
+                                </blockquote>
+                            } <br>
+                            <br>
+                            .header {
+                                <blockquote>
+                                    <span class="property">grid-area</span>: <span class="value">header</span>;
+                                </blockquote>
+                            } <br>
+                            <br>
+                            .article {
+                                <blockquote>
+                                    <span class="property">grid-area</span>: <span class="value">content</span>;
+                                </blockquote>
+                            } <br>
+                            <br>
+                            .aside {
+                                <blockquote>
+                                    <span class="property">grid-area</span>: <span class="value">sidebar</span>;
+                                </blockquote>
+                            } <br>
+                            <br>
+                            .footer {
+                                <blockquote>
+                                    <span class="property">grid-area</span>: <span class="value">footer</span>;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <div class="container example example--8">
+                        <div class="header">Header</div>
+                        <div class="aside">aside</div>
+                        <div class="main">article</div>
+                        <div class="footer">footer</div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Nesting grids and sugrid-->
+            <section>
+                <h2>Nesting grids and sugrid</h2>
+                <p>We can nest elements with grid layout. Aditionally we can use the subgrid value to align the subgrid tracks whith its parent grid tracks. This value is asigned to the grid-template-columns or grid-template-rows property.</p>
+                <div class="conceptDemostration">
+                    <div class="container code">
+                        <code>
+                            .container {
+                                <blockquote>
+                                    <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                    <span class="property">grid-template-columns</span>: <span class="value">repeat(4, 1fr)</span>;<br>
+                                    <span class="property">grid-template-rows</span>: <span class="value">repeat(1, 1fr)</span>;<br>
+                                    <span class="property">gap</span>: <span class="value">10px</span>;
+                                </blockquote>
+                            } <br>
+                            <br>
+                            .subgrid {
+                                <blockquote>
+                                    <span class="property">grid-column</span>: <span class="value">1 / 4</span>;<br>
+                                    <span class="property">grid-row</span>: <span class="value">2 / 4</span>;<br>
+                                    <span class="property">display</span>: <span class="value">grid</span>;<br>
+                                    <span class="property">gap</span>: <span class="value">inherit</span>;<br>
+                                    <span class="property">grid-template-columns</span>: <span class="value">subgrid</span>;<br>
+                                    <span class="property">grid-template-rows</span>: <span class="value">2fr 1fr</span>;
+                                </blockquote>
+                            }
+                        </code>
+                    </div>
+                    <div class="container example example--9">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div class="container subgridExample">
+                            <div>S1</div>
+                            <div>S2</div>
+                            <div>S3</div>
+                            <div>S4</div>
+                        </div>
+                        <div>4</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <a href="../Responsive design/responsivedesign.html">
+            <img src="../../Iconos/back.png" alt="">
+        </a>
+        <a href="../../HTML/enlaces.html">
+            <img src="../../Iconos/home.png" alt="">
+        </a>
+        <a href="../Animaciones/animaciones.html">
+            <img src="../../Iconos/back (1).png" alt="">
+        </a>
+    </footer>
+</body>
+</html>
